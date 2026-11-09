@@ -1,5 +1,10 @@
-import { publicProcedure, router } from "..";
-import { execWithShellEnv } from "./workspaces/utils/shell-env";
+import { getBinDir } from "@superset/agent-setup/paths";
+import { observable } from "@trpc/server/observable";
+import { net } from "electron";
+import { publicProcedure, router } from "../..";
+import { execWithShellEnv } from "../workspaces/utils/shell-env";
+import { type GhAuthLoginEvent, runGhAuthLogin } from "./utils/gh-auth-login";
+import { type GhInstallEvent, installGhCli } from "./utils/install-gh-cli";
 
 interface GhDetectResult {
 	installed: boolean;
@@ -69,10 +74,53 @@ async function detectBrew(): Promise<BrewDetectResult> {
 	}
 }
 
+async function installGhWithBrew(): Promise<GhInstallEvent> {
+	try {
+		await execWithShellEnv("brew", ["install", "gh"], { timeout: 600_000 });
+		const { version } = await detectGhCli();
+		return { stage: "done", version: version ?? "" };
+	} catch {
+		return { stage: "failed", reason: "install" };
+	}
+}
+
 export const createSystemRouter = () => {
 	return router({
 		detectGhCli: publicProcedure.query(detectGhCli),
 		detectBrew: publicProcedure.query(detectBrew),
+		installGhCli: publicProcedure.subscription(() => {
+			return observable<GhInstallEvent>((emit) => {
+				const controller = new AbortController();
+				const finish = (event: GhInstallEvent) => {
+					if (controller.signal.aborted) return;
+					emit.next(event);
+					emit.complete();
+				};
+				if (process.platform === "darwin") {
+					void installGhCli({
+						binDir: getBinDir(),
+						fetch: (url, init) => net.fetch(url, init),
+						signal: controller.signal,
+						onProgress: (event) => {
+							if (event.stage === "done" || event.stage === "failed") return;
+							if (!controller.signal.aborted) emit.next(event);
+						},
+					}).then(finish);
+				} else {
+					emit.next({ stage: "installing" });
+					void installGhWithBrew().then(finish);
+				}
+				return () => controller.abort();
+			});
+		}),
+		ghAuthLogin: publicProcedure.subscription(() => {
+			return observable<GhAuthLoginEvent>((emit) =>
+				runGhAuthLogin((event) => {
+					emit.next(event);
+					if (event.type !== "code") emit.complete();
+				}),
+			);
+		}),
 	});
 };
 

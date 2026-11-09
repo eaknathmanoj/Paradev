@@ -4209,6 +4209,9 @@ msgstr "Vérification des agents…"
 msgid "Checking environments…"
 msgstr "Vérification des environnements…"
 
+msgid "Checking GitHub CLI…"
+msgstr "Vérification de GitHub CLI…"
+
 msgid "Checking host…"
 msgstr "Vérification de l'hôte…"
 
@@ -4220,6 +4223,9 @@ msgstr "Récupérer une pull request nécessite un projet"
 
 msgid "Checking pull requests in {what}"
 msgstr "Vérification des pull requests de {what}"
+
+msgid "Checking the download…"
+msgstr "Vérification du téléchargement…"
 
 msgid "Checking workspaces"
 msgstr "Vérification des espaces de travail"
@@ -5236,6 +5242,9 @@ msgstr "Connecté à"
 msgid "Connected to {connectedOrgName}"
 msgstr "Connecté à {connectedOrgName}"
 
+msgid "Connected to GitHub"
+msgstr "Connecté à GitHub"
+
 msgid "Connected to GitHub as {accountLogin}"
 msgstr "Connecté à GitHub en tant que {accountLogin}"
 
@@ -6006,6 +6015,9 @@ msgstr "Impossible d'abandonner les modifications indexées"
 msgid "Couldn't discard unstaged changes"
 msgstr "Impossible d'abandonner les modifications non indexées"
 
+msgid "Couldn't download GitHub CLI. Check your internet connection and try again."
+msgstr "Impossible de télécharger GitHub CLI. Vérifiez votre connexion internet et réessayez."
+
 msgid "Couldn't edit the message"
 msgstr "Impossible de modifier le message"
 
@@ -6020,6 +6032,9 @@ msgstr "Impossible de confier ceci à un agent"
 
 msgid "Couldn't import"
 msgstr "Échec de l'import"
+
+msgid "Couldn't install GitHub CLI."
+msgstr "Impossible d'installer GitHub CLI."
 
 msgid "Couldn't load {filename}"
 msgstr "Impossible de charger {filename}"
@@ -7476,6 +7491,9 @@ msgstr "téléchargée"
 
 msgid "Downloading"
 msgstr "Téléchargement"
+
+msgid "Downloading GitHub CLI…"
+msgstr "Téléchargement de GitHub CLI…"
 
 msgid "Downloading..."
 msgstr "Téléchargement..."
@@ -9309,6 +9327,9 @@ msgstr "Obtenir l'app iPhone et iPad"
 msgid "Gets an invite to join {organizationName}"
 msgstr "Recevra une invitation à rejoindre {organizationName}"
 
+msgid "Getting a sign-in code from GitHub…"
+msgstr "Obtention d'un code de connexion auprès de GitHub…"
+
 msgid "Getting Work Done"
 msgstr "Pour le travail"
 
@@ -10276,6 +10297,9 @@ msgstr "Installé via"
 
 msgid "Installing..."
 msgstr "Installation..."
+
+msgid "Installing…"
+msgstr "Installation…"
 
 msgid "Installs Paradev on a machine you can reach with ssh, signs Paradev in to your account, and keeps it running as a service."
 msgstr "Installe Paradev sur une machine accessible en ssh, connecte Paradev à votre compte et le maintient en service."
@@ -13114,6 +13138,9 @@ msgstr "Non inclus"
 msgid "Not installed"
 msgstr "Non installé"
 
+msgid "Not installed · needed for private repos and pull requests"
+msgstr "Non installé · nécessaire pour les dépôts privés et les pull requests"
+
 msgid "Not loaded"
 msgstr "Non chargée"
 
@@ -13152,6 +13179,9 @@ msgstr "Non configuré sur cet hôte"
 
 msgid "Not signed in"
 msgstr "Non connecté"
+
+msgid "Not signed in · needed for private repos and pull requests"
+msgstr "Non connecté · nécessaire pour les dépôts privés et les pull requests"
 
 msgid "not sorted"
 msgstr "non trié"
@@ -13693,6 +13723,12 @@ msgstr "Ouvrir depuis un dossier"
 msgid "Open full screen"
 msgstr "Ouvrir en plein écran"
 
+msgid "Open GitHub"
+msgstr "Ouvrir GitHub"
+
+msgid "Open GitHub and enter this code."
+msgstr "Ouvrez GitHub et saisissez ce code."
+
 msgid "Open host"
 msgstr "Ouvrir l'hôte"
 
@@ -13959,6 +13995,9 @@ msgstr "Ouvre le panneau des modifications dans un nouvel onglet, ou active celu
 
 msgid "Open the disk image from your <0>Downloads</0> folder"
 msgstr "Ouvrez l'image disque depuis votre dossier <0>Téléchargements</0>"
+
+msgid "Open the download page"
+msgstr "Ouvrir la page de téléchargement"
 
 msgid "Open the file to see all of it or edit it."
 msgstr "Ouvrez le fichier pour le voir en entier ou le modifier."
@@ -18157,6 +18196,9 @@ msgstr "S'inscrire avec Google"
 msgid "Sign-in didn't finish"
 msgstr "La connexion n'a pas abouti"
 
+msgid "Sign-in didn't finish."
+msgstr "La connexion n'a pas abouti."
+
 msgid "Sign-in expired"
 msgstr "Connexion expirée"
 
@@ -18174,6 +18216,9 @@ msgstr "Taux d'inscriptions finalisées"
 
 msgid "Sign-up steps"
 msgstr "Étapes d'inscription"
+
+msgid "Signed in · clones private repos and opens pull requests"
+msgstr "Connecté · clone les dépôts privés et ouvre les pull requests"
 
 msgid "Signed in as <0>{userName}</0>"
 msgstr "Connecté en tant que <0>{userName}</0>"
@@ -18276,6 +18321,9 @@ msgstr "Tout ignorer"
 
 msgid "Skip for now"
 msgstr "Passer pour l'instant"
+
+msgid "Skip GitHub for now?"
+msgstr "Ignorer GitHub pour l'instant ?"
 
 msgid "Skipped"
 msgstr "Ignorée"
@@ -19596,6 +19644,9 @@ msgstr "Le diff est toujours à jour — seuls les commentaires n'ont pas pu êt
 
 msgid "The dispatcher appears"
 msgstr "Le répartiteur apparaît"
+
+msgid "The download didn't match GitHub's checksum, so it wasn't installed. Try again."
+msgstr "Le téléchargement ne correspond pas à la somme de contrôle de GitHub, il n'a donc pas été installé. Réessayez."
 
 msgid "The endpoint must use https."
 msgstr "Le point de terminaison doit utiliser https."
@@ -21530,6 +21581,9 @@ msgstr "En attente d'approbation. Laissez cette fenêtre ouverte."
 msgid "Waiting for Checks"
 msgstr "En attente des vérifications"
 
+msgid "Waiting for GitHub…"
+msgstr "En attente de GitHub…"
+
 msgid "Waiting for it to connect…"
 msgstr "En attente de la connexion…"
 
@@ -22283,6 +22337,9 @@ msgstr "Vous pouvez le restaurer depuis Paramètres → Projets pendant 30 jours
 
 msgid "You can see how we work before you talk to us."
 msgstr "Vous pouvez voir comment nous travaillons avant même de nous parler."
+
+msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings."
+msgstr "Vous pouvez toujours cloner les dépôts publics. Les dépôts privés et les pull requests nécessitent une connexion à GitHub. Vous pourrez la configurer plus tard dans les Paramètres."
 
 msgid "You can view this page but not change it"
 msgstr "Vous pouvez consulter cette page, mais pas la modifier"

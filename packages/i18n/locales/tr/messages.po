@@ -4209,6 +4209,9 @@ msgstr "Ajanlar denetleniyor…"
 msgid "Checking environments…"
 msgstr "Ortamlar kontrol ediliyor…"
 
+msgid "Checking GitHub CLI…"
+msgstr "GitHub CLI kontrol ediliyor…"
+
 msgid "Checking host…"
 msgstr "Host denetleniyor…"
 
@@ -4220,6 +4223,9 @@ msgstr "Bir PR'ı checkout etmek proje gerektirir"
 
 msgid "Checking pull requests in {what}"
 msgstr "{what} içindeki pull request'ler kontrol ediliyor"
+
+msgid "Checking the download…"
+msgstr "İndirme doğrulanıyor…"
 
 msgid "Checking workspaces"
 msgstr "Çalışma alanları kontrol ediliyor"
@@ -5236,6 +5242,9 @@ msgstr "Şuna bağlı"
 msgid "Connected to {connectedOrgName}"
 msgstr "{connectedOrgName} kuruluşuna bağlı"
 
+msgid "Connected to GitHub"
+msgstr "GitHub'a bağlandı"
+
 msgid "Connected to GitHub as {accountLogin}"
 msgstr "GitHub'a {accountLogin} olarak bağlı"
 
@@ -6006,6 +6015,9 @@ msgstr "Hazırlanmış değişiklikler atılamadı"
 msgid "Couldn't discard unstaged changes"
 msgstr "Hazırlanmamış değişiklikler atılamadı"
 
+msgid "Couldn't download GitHub CLI. Check your internet connection and try again."
+msgstr "GitHub CLI indirilemedi. İnternet bağlantınızı kontrol edip tekrar deneyin."
+
 msgid "Couldn't edit the message"
 msgstr "Mesaj düzenlenemedi"
 
@@ -6020,6 +6032,9 @@ msgstr "Bu bir ajana devredilemedi"
 
 msgid "Couldn't import"
 msgstr "İçe aktarılamadı"
+
+msgid "Couldn't install GitHub CLI."
+msgstr "GitHub CLI kurulamadı."
 
 msgid "Couldn't load {filename}"
 msgstr "{filename} yüklenemedi"
@@ -7476,6 +7491,9 @@ msgstr "indirildi"
 
 msgid "Downloading"
 msgstr "İndiriliyor"
+
+msgid "Downloading GitHub CLI…"
+msgstr "GitHub CLI indiriliyor…"
 
 msgid "Downloading..."
 msgstr "İndiriliyor..."
@@ -9309,6 +9327,9 @@ msgstr "iPhone ve iPad uygulamasını edinin"
 msgid "Gets an invite to join {organizationName}"
 msgstr "{organizationName} kuruluşuna katılma daveti alır"
 
+msgid "Getting a sign-in code from GitHub…"
+msgstr "GitHub'dan oturum açma kodu alınıyor…"
+
 msgid "Getting Work Done"
 msgstr "İş Bitirme"
 
@@ -10276,6 +10297,9 @@ msgstr "Kurulum yolu"
 
 msgid "Installing..."
 msgstr "Kuruluyor..."
+
+msgid "Installing…"
+msgstr "Kuruluyor…"
 
 msgid "Installs Paradev on a machine you can reach with ssh, signs Paradev in to your account, and keeps it running as a service."
 msgstr "ssh ile erişebildiğin bir makineye Paradev'i kurar, Paradev'de hesabınla oturum açar ve Paradev'i bir hizmet olarak çalışır durumda tutar."
@@ -13114,6 +13138,9 @@ msgstr "Dahil değil"
 msgid "Not installed"
 msgstr "Yüklü değil"
 
+msgid "Not installed · needed for private repos and pull requests"
+msgstr "Kurulu değil · özel depolar ve pull request'ler için gerekli"
+
 msgid "Not loaded"
 msgstr "Yüklenmedi"
 
@@ -13152,6 +13179,9 @@ msgstr "Bu host'ta kurulu değil"
 
 msgid "Not signed in"
 msgstr "Oturum açılmadı"
+
+msgid "Not signed in · needed for private repos and pull requests"
+msgstr "Oturum açılmadı · özel depolar ve pull request'ler için gerekli"
 
 msgid "not sorted"
 msgstr "sıralanmamış"
@@ -13693,6 +13723,12 @@ msgstr "Klasörden aç"
 msgid "Open full screen"
 msgstr "Tam ekranda aç"
 
+msgid "Open GitHub"
+msgstr "GitHub'ı aç"
+
+msgid "Open GitHub and enter this code."
+msgstr "GitHub'ı açın ve bu kodu girin."
+
 msgid "Open host"
 msgstr "Host'u aç"
 
@@ -13959,6 +13995,9 @@ msgstr "Değişiklikler panelini yeni sekmede açar veya mevcut olana odaklanır
 
 msgid "Open the disk image from your <0>Downloads</0> folder"
 msgstr "Disk görüntüsünü <0>İndirilenler</0> klasöründen aç"
+
+msgid "Open the download page"
+msgstr "İndirme sayfasını aç"
 
 msgid "Open the file to see all of it or edit it."
 msgstr "Tamamını görmek veya düzenlemek için dosyayı aç."
@@ -18157,6 +18196,9 @@ msgstr "Google ile kaydol"
 msgid "Sign-in didn't finish"
 msgstr "Giriş tamamlanmadı"
 
+msgid "Sign-in didn't finish."
+msgstr "Oturum açma tamamlanmadı."
+
 msgid "Sign-in expired"
 msgstr "Oturum süresi doldu"
 
@@ -18174,6 +18216,9 @@ msgstr "Kayıt tamamlama"
 
 msgid "Sign-up steps"
 msgstr "Kayıt adımları"
+
+msgid "Signed in · clones private repos and opens pull requests"
+msgstr "Oturum açıldı · özel depoları klonlar ve pull request açar"
 
 msgid "Signed in as <0>{userName}</0>"
 msgstr "<0>{userName}</0> olarak oturum açıldı"
@@ -18276,6 +18321,9 @@ msgstr "Tümünü atla"
 
 msgid "Skip for now"
 msgstr "Şimdilik atla"
+
+msgid "Skip GitHub for now?"
+msgstr "GitHub şimdilik atlansın mı?"
 
 msgid "Skipped"
 msgstr "Atlandı"
@@ -19596,6 +19644,9 @@ msgstr "Fark hâlâ güncel — yalnızca yorumlar yüklenemedi."
 
 msgid "The dispatcher appears"
 msgstr "Dağıtıcı ortaya çıkar"
+
+msgid "The download didn't match GitHub's checksum, so it wasn't installed. Try again."
+msgstr "İndirilen dosya GitHub'ın sağlama toplamıyla eşleşmediği için kurulmadı. Tekrar deneyin."
 
 msgid "The endpoint must use https."
 msgstr "Uç nokta https kullanmalıdır."
@@ -21530,6 +21581,9 @@ msgstr "Onay bekleniyor. Bu pencereyi açık tutun."
 msgid "Waiting for Checks"
 msgstr "Kontroller bekleniyor"
 
+msgid "Waiting for GitHub…"
+msgstr "GitHub bekleniyor…"
+
 msgid "Waiting for it to connect…"
 msgstr "Bağlanması bekleniyor…"
 
@@ -22283,6 +22337,9 @@ msgstr "30 gün boyunca Ayarlar → Projeler bölümünden geri yükleyebilirsin
 
 msgid "You can see how we work before you talk to us."
 msgstr "Bizimle konuşmadan önce nasıl çalıştığımızı görebilirsiniz."
+
+msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings."
+msgstr "Herkese açık depoları yine de klonlayabilirsiniz. Özel depolar ve pull request'ler için GitHub bağlantısı gerekir. Daha sonra Ayarlar'dan bağlayabilirsiniz."
 
 msgid "You can view this page but not change it"
 msgstr "Bu sayfayı görüntüleyebilirsiniz ancak değiştiremezsiniz"

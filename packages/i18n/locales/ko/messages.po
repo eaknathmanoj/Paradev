@@ -4209,6 +4209,9 @@ msgstr "에이전트 확인하는 중…"
 msgid "Checking environments…"
 msgstr "환경 확인 중…"
 
+msgid "Checking GitHub CLI…"
+msgstr "GitHub CLI 확인 중…"
+
 msgid "Checking host…"
 msgstr "호스트 확인하는 중…"
 
@@ -4220,6 +4223,9 @@ msgstr "PR을 체크아웃하려면 프로젝트가 필요합니다"
 
 msgid "Checking pull requests in {what}"
 msgstr "{what}의 풀 리퀘스트 확인 중"
+
+msgid "Checking the download…"
+msgstr "다운로드 확인 중…"
 
 msgid "Checking workspaces"
 msgstr "워크스페이스 확인 중"
@@ -5236,6 +5242,9 @@ msgstr "연결 대상"
 msgid "Connected to {connectedOrgName}"
 msgstr "{connectedOrgName}에 연결됨"
 
+msgid "Connected to GitHub"
+msgstr "GitHub에 연결됨"
+
 msgid "Connected to GitHub as {accountLogin}"
 msgstr "{accountLogin}(으)로 GitHub에 연결됨"
 
@@ -6006,6 +6015,9 @@ msgstr "스테이징된 변경 사항을 버리지 못했습니다"
 msgid "Couldn't discard unstaged changes"
 msgstr "스테이징되지 않은 변경 사항을 버리지 못했습니다"
 
+msgid "Couldn't download GitHub CLI. Check your internet connection and try again."
+msgstr "GitHub CLI를 다운로드하지 못했습니다. 인터넷 연결을 확인한 후 다시 시도하세요."
+
 msgid "Couldn't edit the message"
 msgstr "메시지를 편집할 수 없습니다"
 
@@ -6020,6 +6032,9 @@ msgstr "에이전트에게 넘길 수 없습니다"
 
 msgid "Couldn't import"
 msgstr "가져오지 못했습니다"
+
+msgid "Couldn't install GitHub CLI."
+msgstr "GitHub CLI를 설치하지 못했습니다."
 
 msgid "Couldn't load {filename}"
 msgstr "{filename}을(를) 불러올 수 없습니다"
@@ -7476,6 +7491,9 @@ msgstr "다운로드됨"
 
 msgid "Downloading"
 msgstr "다운로드 중"
+
+msgid "Downloading GitHub CLI…"
+msgstr "GitHub CLI 다운로드 중…"
 
 msgid "Downloading..."
 msgstr "다운로드 중..."
@@ -9309,6 +9327,9 @@ msgstr "iPhone 및 iPad 앱 받기"
 msgid "Gets an invite to join {organizationName}"
 msgstr "{organizationName} 가입 초대를 받습니다"
 
+msgid "Getting a sign-in code from GitHub…"
+msgstr "GitHub에서 로그인 코드를 받는 중…"
+
 msgid "Getting Work Done"
 msgstr "업무용"
 
@@ -10276,6 +10297,9 @@ msgstr "설치 경로"
 
 msgid "Installing..."
 msgstr "설치 중..."
+
+msgid "Installing…"
+msgstr "설치 중…"
 
 msgid "Installs Paradev on a machine you can reach with ssh, signs Paradev in to your account, and keeps it running as a service."
 msgstr "ssh로 접속할 수 있는 머신에 Paradev를 설치하고, Paradev를 내 계정으로 로그인시킨 뒤 서비스로 계속 실행합니다."
@@ -13114,6 +13138,9 @@ msgstr "미포함"
 msgid "Not installed"
 msgstr "설치되지 않음"
 
+msgid "Not installed · needed for private repos and pull requests"
+msgstr "설치되지 않음 · 비공개 저장소와 풀 리퀘스트에 필요합니다"
+
 msgid "Not loaded"
 msgstr "로드 안 됨"
 
@@ -13152,6 +13179,9 @@ msgstr "이 호스트에 설정되지 않음"
 
 msgid "Not signed in"
 msgstr "로그인되지 않음"
+
+msgid "Not signed in · needed for private repos and pull requests"
+msgstr "로그인되지 않음 · 비공개 저장소와 풀 리퀘스트에 필요합니다"
 
 msgid "not sorted"
 msgstr "정렬 안 됨"
@@ -13693,6 +13723,12 @@ msgstr "폴더에서 열기"
 msgid "Open full screen"
 msgstr "전체 화면으로 열기"
 
+msgid "Open GitHub"
+msgstr "GitHub 열기"
+
+msgid "Open GitHub and enter this code."
+msgstr "GitHub를 열고 이 코드를 입력하세요."
+
 msgid "Open host"
 msgstr "호스트 열기"
 
@@ -13959,6 +13995,9 @@ msgstr "변경 패널을 새 탭에서 열거나 기존 패널에 포커스합�
 
 msgid "Open the disk image from your <0>Downloads</0> folder"
 msgstr "<0>다운로드</0> 폴더에서 디스크 이미지를 여세요"
+
+msgid "Open the download page"
+msgstr "다운로드 페이지 열기"
 
 msgid "Open the file to see all of it or edit it."
 msgstr "파일을 열어 전체를 보거나 편집하세요."
@@ -18157,6 +18196,9 @@ msgstr "Google로 가입"
 msgid "Sign-in didn't finish"
 msgstr "로그인이 완료되지 않았습니다"
 
+msgid "Sign-in didn't finish."
+msgstr "로그인이 완료되지 않았습니다."
+
 msgid "Sign-in expired"
 msgstr "로그인 만료됨"
 
@@ -18174,6 +18216,9 @@ msgstr "가입 완료율"
 
 msgid "Sign-up steps"
 msgstr "가입 단계"
+
+msgid "Signed in · clones private repos and opens pull requests"
+msgstr "로그인됨 · 비공개 저장소를 클론하고 풀 리퀘스트를 엽니다"
 
 msgid "Signed in as <0>{userName}</0>"
 msgstr "<0>{userName}</0>(으)로 로그인됨"
@@ -18276,6 +18321,9 @@ msgstr "모두 건너뛰기"
 
 msgid "Skip for now"
 msgstr "지금은 건너뛰기"
+
+msgid "Skip GitHub for now?"
+msgstr "지금은 GitHub를 건너뛸까요?"
 
 msgid "Skipped"
 msgstr "건너뜀"
@@ -19596,6 +19644,9 @@ msgstr "차이는 최신 상태입니다 — 코멘트만 불러오지 못했습
 
 msgid "The dispatcher appears"
 msgstr "배차원의 등장"
+
+msgid "The download didn't match GitHub's checksum, so it wasn't installed. Try again."
+msgstr "다운로드가 GitHub 체크섬과 일치하지 않아 설치하지 않았습니다. 다시 시도하세요."
 
 msgid "The endpoint must use https."
 msgstr "엔드포인트는 https를 사용해야 합니다."
@@ -21530,6 +21581,9 @@ msgstr "승인을 기다리는 중입니다. 이 대화 상자를 열어 두세�
 msgid "Waiting for Checks"
 msgstr "검사 대기 중"
 
+msgid "Waiting for GitHub…"
+msgstr "GitHub를 기다리는 중…"
+
 msgid "Waiting for it to connect…"
 msgstr "연결을 기다리는 중…"
 
@@ -22283,6 +22337,9 @@ msgstr "30일 동안 설정 → 프로젝트에서 복원할 수 있습니다. �
 
 msgid "You can see how we work before you talk to us."
 msgstr "대화하기 전에 우리가 일하는 방식을 직접 볼 수 있습니다."
+
+msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings."
+msgstr "공개 저장소는 계속 클론할 수 있습니다. 비공개 저장소와 풀 리퀘스트에는 GitHub 연결이 필요합니다. 나중에 설정에서 연결할 수 있습니다."
 
 msgid "You can view this page but not change it"
 msgstr "이 페이지를 볼 수는 있지만 변경할 수는 없습니다"

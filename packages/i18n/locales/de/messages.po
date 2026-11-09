@@ -4209,6 +4209,9 @@ msgstr "Agenten werden geprüft…"
 msgid "Checking environments…"
 msgstr "Umgebungen werden geprüft…"
 
+msgid "Checking GitHub CLI…"
+msgstr "GitHub CLI wird geprüft…"
+
 msgid "Checking host…"
 msgstr "Host wird geprüft…"
 
@@ -4220,6 +4223,9 @@ msgstr "Zum Auschecken eines PR wird ein Projekt benötigt"
 
 msgid "Checking pull requests in {what}"
 msgstr "Pull Requests in {what} werden geprüft"
+
+msgid "Checking the download…"
+msgstr "Download wird geprüft…"
 
 msgid "Checking workspaces"
 msgstr "Arbeitsbereiche werden geprüft"
@@ -5236,6 +5242,9 @@ msgstr "Verbunden mit"
 msgid "Connected to {connectedOrgName}"
 msgstr "Verbunden mit {connectedOrgName}"
 
+msgid "Connected to GitHub"
+msgstr "Mit GitHub verbunden"
+
 msgid "Connected to GitHub as {accountLogin}"
 msgstr "Mit GitHub verbunden als {accountLogin}"
 
@@ -6006,6 +6015,9 @@ msgstr "Gestagede Änderungen konnten nicht verworfen werden"
 msgid "Couldn't discard unstaged changes"
 msgstr "Nicht gestagede Änderungen konnten nicht verworfen werden"
 
+msgid "Couldn't download GitHub CLI. Check your internet connection and try again."
+msgstr "GitHub CLI konnte nicht heruntergeladen werden. Prüfe deine Internetverbindung und versuche es erneut."
+
 msgid "Couldn't edit the message"
 msgstr "Die Nachricht konnte nicht bearbeitet werden"
 
@@ -6020,6 +6032,9 @@ msgstr "Konnte nicht an einen Agenten übergeben werden"
 
 msgid "Couldn't import"
 msgstr "Import fehlgeschlagen"
+
+msgid "Couldn't install GitHub CLI."
+msgstr "GitHub CLI konnte nicht installiert werden."
 
 msgid "Couldn't load {filename}"
 msgstr "{filename} konnte nicht geladen werden"
@@ -7476,6 +7491,9 @@ msgstr "geladen"
 
 msgid "Downloading"
 msgstr "Wird heruntergeladen"
+
+msgid "Downloading GitHub CLI…"
+msgstr "GitHub CLI wird heruntergeladen…"
 
 msgid "Downloading..."
 msgstr "Wird heruntergeladen..."
@@ -9309,6 +9327,9 @@ msgstr "iPhone- und iPad-App holen"
 msgid "Gets an invite to join {organizationName}"
 msgstr "Erhält eine Einladung zu {organizationName}"
 
+msgid "Getting a sign-in code from GitHub…"
+msgstr "Anmeldecode wird von GitHub abgerufen…"
+
 msgid "Getting Work Done"
 msgstr "Arbeit erledigen"
 
@@ -10276,6 +10297,9 @@ msgstr "Installiert über"
 
 msgid "Installing..."
 msgstr "Wird installiert..."
+
+msgid "Installing…"
+msgstr "Wird installiert…"
 
 msgid "Installs Paradev on a machine you can reach with ssh, signs Paradev in to your account, and keeps it running as a service."
 msgstr "Installiert Paradev auf einem Rechner, den du per ssh erreichst, meldet Paradev bei deinem Konto an und hält Paradev als Dienst am Laufen."
@@ -13114,6 +13138,9 @@ msgstr "Nicht enthalten"
 msgid "Not installed"
 msgstr "Nicht installiert"
 
+msgid "Not installed · needed for private repos and pull requests"
+msgstr "Nicht installiert · nötig für private Repositorys und Pull Requests"
+
 msgid "Not loaded"
 msgstr "Nicht geladen"
 
@@ -13152,6 +13179,9 @@ msgstr "Auf diesem Host nicht eingerichtet"
 
 msgid "Not signed in"
 msgstr "Nicht angemeldet"
+
+msgid "Not signed in · needed for private repos and pull requests"
+msgstr "Nicht angemeldet · nötig für private Repositorys und Pull Requests"
 
 msgid "not sorted"
 msgstr "nicht sortiert"
@@ -13693,6 +13723,12 @@ msgstr "Aus Ordner öffnen"
 msgid "Open full screen"
 msgstr "Im Vollbild öffnen"
 
+msgid "Open GitHub"
+msgstr "GitHub öffnen"
+
+msgid "Open GitHub and enter this code."
+msgstr "Öffne GitHub und gib diesen Code ein."
+
 msgid "Open host"
 msgstr "Host öffnen"
 
@@ -13959,6 +13995,9 @@ msgstr "Öffnet den Änderungen-Bereich in einem neuen Tab oder fokussiert den b
 
 msgid "Open the disk image from your <0>Downloads</0> folder"
 msgstr "Öffne das Disk-Image aus deinem Ordner <0>Downloads</0>"
+
+msgid "Open the download page"
+msgstr "Downloadseite öffnen"
 
 msgid "Open the file to see all of it or edit it."
 msgstr "Öffne die Datei, um sie vollständig zu sehen oder zu bearbeiten."
@@ -18157,6 +18196,9 @@ msgstr "Mit Google registrieren"
 msgid "Sign-in didn't finish"
 msgstr "Die Anmeldung wurde nicht abgeschlossen"
 
+msgid "Sign-in didn't finish."
+msgstr "Die Anmeldung wurde nicht abgeschlossen."
+
 msgid "Sign-in expired"
 msgstr "Anmeldung abgelaufen"
 
@@ -18174,6 +18216,9 @@ msgstr "Registrierungsabschluss"
 
 msgid "Sign-up steps"
 msgstr "Registrierungsschritte"
+
+msgid "Signed in · clones private repos and opens pull requests"
+msgstr "Angemeldet · klont private Repositorys und öffnet Pull Requests"
 
 msgid "Signed in as <0>{userName}</0>"
 msgstr "Angemeldet als <0>{userName}</0>"
@@ -18276,6 +18321,9 @@ msgstr "Alle überspringen"
 
 msgid "Skip for now"
 msgstr "Vorerst überspringen"
+
+msgid "Skip GitHub for now?"
+msgstr "GitHub vorerst überspringen?"
 
 msgid "Skipped"
 msgstr "Übersprungen"
@@ -19596,6 +19644,9 @@ msgstr "Der Diff ist weiterhin aktuell — nur die Kommentare konnten nicht gela
 
 msgid "The dispatcher appears"
 msgstr "Der Disponent tritt auf"
+
+msgid "The download didn't match GitHub's checksum, so it wasn't installed. Try again."
+msgstr "Der Download stimmte nicht mit der Prüfsumme von GitHub überein und wurde daher nicht installiert. Versuche es erneut."
 
 msgid "The endpoint must use https."
 msgstr "Der Endpunkt muss https verwenden."
@@ -21530,6 +21581,9 @@ msgstr "Warte auf Freigabe. Lass diesen Dialog geöffnet."
 msgid "Waiting for Checks"
 msgstr "Wartet auf Prüfungen"
 
+msgid "Waiting for GitHub…"
+msgstr "Warte auf GitHub…"
+
 msgid "Waiting for it to connect…"
 msgstr "Warten auf die Verbindung…"
 
@@ -22283,6 +22337,9 @@ msgstr "Du kannst es 30 Tage lang unter Einstellungen → Projekte wiederherstel
 
 msgid "You can see how we work before you talk to us."
 msgstr "Du kannst sehen, wie wir arbeiten, bevor du mit uns sprichst."
+
+msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings."
+msgstr "Öffentliche Repositorys kannst du weiterhin klonen. Private Repositorys und Pull Requests brauchen eine Verbindung zu GitHub. Du kannst sie später in den Einstellungen herstellen."
 
 msgid "You can view this page but not change it"
 msgstr "Du kannst diese Seite ansehen, aber nicht ändern"

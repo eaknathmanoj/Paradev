@@ -27,10 +27,10 @@ import {
 import { useOpenMainRepoWorkspace } from "renderer/react-query/workspaces";
 import { useFolderFirstImport } from "renderer/routes/_authenticated/_dashboard/components/AddRepositoryModals/hooks/useFolderFirstImport";
 import { EmptyProjectModal } from "renderer/routes/_authenticated/components/EmptyProjectModal";
+import { GitHubCliDialog } from "renderer/routes/_authenticated/components/GitHubCliDialog";
 import { TemplateGalleryModal } from "renderer/routes/_authenticated/components/TemplateGalleryModal";
 import { useLocalHostService } from "renderer/routes/_authenticated/providers/LocalHostServiceProvider";
 import { useOnboardingRestartStore } from "renderer/routes/_authenticated/stores/onboardingRestartStore";
-import { GhAuthDialog } from "../components/GhAuthDialog";
 import { OnboardingTile } from "../components/OnboardingTile";
 import { AcquisitionSourceRow } from "./components/AcquisitionSourceRow";
 import {
@@ -346,11 +346,10 @@ function OnboardingProjectPage() {
 					finish(result.projectId);
 				}}
 			/>
-			<GhAuthDialog
+			<GitHubCliDialog
 				open={ghAuthOpen}
-				mode="auth"
+				startWith="auth"
 				onOpenChange={setGhAuthOpen}
-				onExit={() => setGhAuthOpen(false)}
 			/>
 			{importOffer.dialog}
 		</div>

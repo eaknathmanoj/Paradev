@@ -14,6 +14,7 @@ import { authClient } from "renderer/lib/auth-client";
 import { electronTrpc } from "renderer/lib/electron-trpc";
 import { WindowControlsInset } from "../_dashboard/components/WindowControlsInset";
 import { useOnboardingRestartStore } from "../stores/onboardingRestartStore";
+import { GitHubStepContinue } from "./components/GitHubStepContinue";
 import { OnboardingHelpLinks } from "./components/OnboardingHelpLinks";
 import { OnboardingLanguagePicker } from "./components/OnboardingLanguagePicker";
 import { OnboardingNavigation } from "./components/OnboardingNavigation";
@@ -152,6 +153,14 @@ function OnboardingFlowLayout() {
 						<OnboardingNavigation
 							onBack={isFirstStep ? null : handleBack}
 							onContinue={handleContinue}
+							continueButton={
+								currentStep === SETUP_STEP && handleContinue ? (
+									<GitHubStepContinue
+										ghReady={ghReady}
+										onContinue={handleContinue}
+									/>
+								) : undefined
+							}
 						/>
 					</div>
 				) : (

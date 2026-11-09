@@ -4209,6 +4209,9 @@ msgstr "エージェントを確認中…"
 msgid "Checking environments…"
 msgstr "環境を確認中…"
 
+msgid "Checking GitHub CLI…"
+msgstr "GitHub CLI を確認中…"
+
 msgid "Checking host…"
 msgstr "ホストを確認中…"
 
@@ -4220,6 +4223,9 @@ msgstr "PRのチェックアウトにはプロジェクトが必要です"
 
 msgid "Checking pull requests in {what}"
 msgstr "{what} のプルリクエストを確認中"
+
+msgid "Checking the download…"
+msgstr "ダウンロードを確認中…"
 
 msgid "Checking workspaces"
 msgstr "ワークスペースを確認中"
@@ -5236,6 +5242,9 @@ msgstr "接続先"
 msgid "Connected to {connectedOrgName}"
 msgstr "{connectedOrgName}に接続済み"
 
+msgid "Connected to GitHub"
+msgstr "GitHub に接続しました"
+
 msgid "Connected to GitHub as {accountLogin}"
 msgstr "{accountLogin} として GitHub に接続済み"
 
@@ -6006,6 +6015,9 @@ msgstr "ステージ済みの変更を破棄できませんでした"
 msgid "Couldn't discard unstaged changes"
 msgstr "未ステージの変更を破棄できませんでした"
 
+msgid "Couldn't download GitHub CLI. Check your internet connection and try again."
+msgstr "GitHub CLI をダウンロードできませんでした。インターネット接続を確認して、もう一度お試しください。"
+
 msgid "Couldn't edit the message"
 msgstr "メッセージを編集できませんでした"
 
@@ -6020,6 +6032,9 @@ msgstr "エージェントに引き渡せませんでした"
 
 msgid "Couldn't import"
 msgstr "インポートできませんでした"
+
+msgid "Couldn't install GitHub CLI."
+msgstr "GitHub CLI をインストールできませんでした。"
 
 msgid "Couldn't load {filename}"
 msgstr "{filename} を読み込めませんでした"
@@ -7476,6 +7491,9 @@ msgstr "ダウンロード済み"
 
 msgid "Downloading"
 msgstr "ダウンロード中"
+
+msgid "Downloading GitHub CLI…"
+msgstr "GitHub CLI をダウンロード中…"
 
 msgid "Downloading..."
 msgstr "ダウンロード中..."
@@ -9309,6 +9327,9 @@ msgstr "iPhone・iPad アプリを入手"
 msgid "Gets an invite to join {organizationName}"
 msgstr "{organizationName}への招待が届きます"
 
+msgid "Getting a sign-in code from GitHub…"
+msgstr "GitHub からサインインコードを取得中…"
+
 msgid "Getting Work Done"
 msgstr "仕事に役立つ"
 
@@ -10276,6 +10297,9 @@ msgstr "インストール方法"
 
 msgid "Installing..."
 msgstr "インストール中..."
+
+msgid "Installing…"
+msgstr "インストール中…"
 
 msgid "Installs Paradev on a machine you can reach with ssh, signs Paradev in to your account, and keeps it running as a service."
 msgstr "ssh で接続できるマシンに Paradev をインストールし、Paradev をあなたのアカウントにサインインさせ、サービスとして実行し続けます。"
@@ -13114,6 +13138,9 @@ msgstr "含まれない"
 msgid "Not installed"
 msgstr "未インストール"
 
+msgid "Not installed · needed for private repos and pull requests"
+msgstr "未インストール · プライベートリポジトリとプルリクエストに必要です"
+
 msgid "Not loaded"
 msgstr "未読み込み"
 
@@ -13152,6 +13179,9 @@ msgstr "このホストではセットアップされていません"
 
 msgid "Not signed in"
 msgstr "未サインイン"
+
+msgid "Not signed in · needed for private repos and pull requests"
+msgstr "未サインイン · プライベートリポジトリとプルリクエストに必要です"
 
 msgid "not sorted"
 msgstr "並べ替えなし"
@@ -13693,6 +13723,12 @@ msgstr "フォルダから開く"
 msgid "Open full screen"
 msgstr "全画面で開く"
 
+msgid "Open GitHub"
+msgstr "GitHub を開く"
+
+msgid "Open GitHub and enter this code."
+msgstr "GitHub を開いて、このコードを入力してください。"
+
 msgid "Open host"
 msgstr "ホストを開く"
 
@@ -13959,6 +13995,9 @@ msgstr "変更ペインを新しいタブで開くか、既存のペインにフ
 
 msgid "Open the disk image from your <0>Downloads</0> folder"
 msgstr "<0>ダウンロード</0>フォルダからディスクイメージを開く"
+
+msgid "Open the download page"
+msgstr "ダウンロードページを開く"
 
 msgid "Open the file to see all of it or edit it."
 msgstr "ファイルを開くと、全体を表示したり編集したりできます。"
@@ -18157,6 +18196,9 @@ msgstr "Googleでサインアップ"
 msgid "Sign-in didn't finish"
 msgstr "サインインが完了しませんでした"
 
+msgid "Sign-in didn't finish."
+msgstr "サインインが完了しませんでした。"
+
 msgid "Sign-in expired"
 msgstr "サインインの期限切れ"
 
@@ -18174,6 +18216,9 @@ msgstr "登録完了率"
 
 msgid "Sign-up steps"
 msgstr "登録ステップ数"
+
+msgid "Signed in · clones private repos and opens pull requests"
+msgstr "サインイン済み · プライベートリポジトリのクローンとプルリクエストの作成に使用します"
 
 msgid "Signed in as <0>{userName}</0>"
 msgstr "<0>{userName}</0>としてサインイン中"
@@ -18276,6 +18321,9 @@ msgstr "すべてスキップ"
 
 msgid "Skip for now"
 msgstr "今はスキップ"
+
+msgid "Skip GitHub for now?"
+msgstr "GitHub の接続をスキップしますか？"
 
 msgid "Skipped"
 msgstr "スキップ"
@@ -19596,6 +19644,9 @@ msgstr "差分は最新です — コメントの読み込みだけが失敗し�
 
 msgid "The dispatcher appears"
 msgstr "ディスパッチャーの登場"
+
+msgid "The download didn't match GitHub's checksum, so it wasn't installed. Try again."
+msgstr "ダウンロードが GitHub のチェックサムと一致しなかったため、インストールしませんでした。もう一度お試しください。"
 
 msgid "The endpoint must use https."
 msgstr "エンドポイントは https を使用する必要があります。"
@@ -21530,6 +21581,9 @@ msgstr "承認を待っています。このダイアログは開いたままに
 msgid "Waiting for Checks"
 msgstr "チェックを待機中"
 
+msgid "Waiting for GitHub…"
+msgstr "GitHub を待っています…"
+
 msgid "Waiting for it to connect…"
 msgstr "接続を待っています…"
 
@@ -22283,6 +22337,9 @@ msgstr "30 日間は「設定 → プロジェクト」から復元できます�
 
 msgid "You can see how we work before you talk to us."
 msgstr "話をする前に、私たちの働き方を見ることができます。"
+
+msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings."
+msgstr "公開リポジトリは引き続きクローンできます。プライベートリポジトリとプルリクエストには GitHub の接続が必要です。あとで設定から接続できます。"
 
 msgid "You can view this page but not change it"
 msgstr "このページは閲覧できますが、変更はできません"

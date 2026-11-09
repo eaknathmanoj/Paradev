@@ -4209,6 +4209,9 @@ msgstr "Verifica degli agenti…"
 msgid "Checking environments…"
 msgstr "Verifica degli ambienti…"
 
+msgid "Checking GitHub CLI…"
+msgstr "Controllo di GitHub CLI…"
+
 msgid "Checking host…"
 msgstr "Verifica dell'host…"
 
@@ -4220,6 +4223,9 @@ msgstr "Il checkout di una PR richiede un progetto"
 
 msgid "Checking pull requests in {what}"
 msgstr "Controllo delle pull request di {what}"
+
+msgid "Checking the download…"
+msgstr "Verifica del download…"
 
 msgid "Checking workspaces"
 msgstr "Controllo dei workspace"
@@ -5236,6 +5242,9 @@ msgstr "Collegato a"
 msgid "Connected to {connectedOrgName}"
 msgstr "Collegato a {connectedOrgName}"
 
+msgid "Connected to GitHub"
+msgstr "Connesso a GitHub"
+
 msgid "Connected to GitHub as {accountLogin}"
 msgstr "Collegato a GitHub come {accountLogin}"
 
@@ -6006,6 +6015,9 @@ msgstr "Impossibile scartare le modifiche in stage"
 msgid "Couldn't discard unstaged changes"
 msgstr "Impossibile scartare le modifiche non in stage"
 
+msgid "Couldn't download GitHub CLI. Check your internet connection and try again."
+msgstr "Impossibile scaricare GitHub CLI. Controlla la connessione a internet e riprova."
+
 msgid "Couldn't edit the message"
 msgstr "Impossibile modificare il messaggio"
 
@@ -6020,6 +6032,9 @@ msgstr "Impossibile affidare questo a un agente"
 
 msgid "Couldn't import"
 msgstr "Importazione non riuscita"
+
+msgid "Couldn't install GitHub CLI."
+msgstr "Impossibile installare GitHub CLI."
 
 msgid "Couldn't load {filename}"
 msgstr "Impossibile caricare {filename}"
@@ -7476,6 +7491,9 @@ msgstr "scaricato"
 
 msgid "Downloading"
 msgstr "Download in corso"
+
+msgid "Downloading GitHub CLI…"
+msgstr "Download di GitHub CLI…"
 
 msgid "Downloading..."
 msgstr "Download..."
@@ -9309,6 +9327,9 @@ msgstr "Scarica l'app per iPhone e iPad"
 msgid "Gets an invite to join {organizationName}"
 msgstr "Riceverà un invito a unirsi a {organizationName}"
 
+msgid "Getting a sign-in code from GitHub…"
+msgstr "Recupero di un codice di accesso da GitHub…"
+
 msgid "Getting Work Done"
 msgstr "Per lavorare"
 
@@ -10276,6 +10297,9 @@ msgstr "Installato tramite"
 
 msgid "Installing..."
 msgstr "Installazione..."
+
+msgid "Installing…"
+msgstr "Installazione…"
 
 msgid "Installs Paradev on a machine you can reach with ssh, signs Paradev in to your account, and keeps it running as a service."
 msgstr "Installa Paradev su una macchina raggiungibile via ssh, collega Paradev al tuo account e lo mantiene in esecuzione come servizio."
@@ -13114,6 +13138,9 @@ msgstr "Non incluso"
 msgid "Not installed"
 msgstr "Non installato"
 
+msgid "Not installed · needed for private repos and pull requests"
+msgstr "Non installato · necessario per repository privati e pull request"
+
 msgid "Not loaded"
 msgstr "Non caricata"
 
@@ -13152,6 +13179,9 @@ msgstr "Non configurato su questo host"
 
 msgid "Not signed in"
 msgstr "Accesso non effettuato"
+
+msgid "Not signed in · needed for private repos and pull requests"
+msgstr "Accesso non effettuato · necessario per repository privati e pull request"
 
 msgid "not sorted"
 msgstr "non ordinato"
@@ -13693,6 +13723,12 @@ msgstr "Apri da cartella"
 msgid "Open full screen"
 msgstr "Apri a schermo intero"
 
+msgid "Open GitHub"
+msgstr "Apri GitHub"
+
+msgid "Open GitHub and enter this code."
+msgstr "Apri GitHub e inserisci questo codice."
+
 msgid "Open host"
 msgstr "Apri host"
 
@@ -13959,6 +13995,9 @@ msgstr "Apre il pannello delle modifiche in una nuova scheda, o attiva quello es
 
 msgid "Open the disk image from your <0>Downloads</0> folder"
 msgstr "Apri l'immagine disco dalla cartella <0>Download</0>"
+
+msgid "Open the download page"
+msgstr "Apri la pagina di download"
 
 msgid "Open the file to see all of it or edit it."
 msgstr "Apri il file per vederlo per intero o modificarlo."
@@ -18157,6 +18196,9 @@ msgstr "Registrati con Google"
 msgid "Sign-in didn't finish"
 msgstr "L'accesso non è stato completato"
 
+msgid "Sign-in didn't finish."
+msgstr "L'accesso non è stato completato."
+
 msgid "Sign-in expired"
 msgstr "Accesso scaduto"
 
@@ -18174,6 +18216,9 @@ msgstr "Tasso di registrazioni completate"
 
 msgid "Sign-up steps"
 msgstr "Passaggi di registrazione"
+
+msgid "Signed in · clones private repos and opens pull requests"
+msgstr "Accesso effettuato · clona repository privati e apre pull request"
 
 msgid "Signed in as <0>{userName}</0>"
 msgstr "Hai effettuato l'accesso come <0>{userName}</0>"
@@ -18276,6 +18321,9 @@ msgstr "Salta tutto"
 
 msgid "Skip for now"
 msgstr "Salta per ora"
+
+msgid "Skip GitHub for now?"
+msgstr "Saltare GitHub per ora?"
 
 msgid "Skipped"
 msgstr "Saltati"
@@ -19596,6 +19644,9 @@ msgstr "Il diff è comunque aggiornato — solo i commenti non sono stati carica
 
 msgid "The dispatcher appears"
 msgstr "Compare il dispatcher"
+
+msgid "The download didn't match GitHub's checksum, so it wasn't installed. Try again."
+msgstr "Il download non corrispondeva al checksum di GitHub, quindi non è stato installato. Riprova."
 
 msgid "The endpoint must use https."
 msgstr "L'endpoint deve usare https."
@@ -21530,6 +21581,9 @@ msgstr "In attesa di approvazione. Tieni aperta questa finestra."
 msgid "Waiting for Checks"
 msgstr "In attesa dei controlli"
 
+msgid "Waiting for GitHub…"
+msgstr "In attesa di GitHub…"
+
 msgid "Waiting for it to connect…"
 msgstr "In attesa della connessione…"
 
@@ -22283,6 +22337,9 @@ msgstr "Puoi ripristinarlo da Impostazioni → Progetti per 30 giorni. La cartel
 
 msgid "You can see how we work before you talk to us."
 msgstr "Puoi vedere come lavoriamo prima di parlare con noi."
+
+msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings."
+msgstr "Puoi comunque clonare i repository pubblici. I repository privati e le pull request richiedono GitHub connesso. Puoi collegarlo più tardi nelle Impostazioni."
 
 msgid "You can view this page but not change it"
 msgstr "Puoi visualizzare questa pagina ma non modificarla"

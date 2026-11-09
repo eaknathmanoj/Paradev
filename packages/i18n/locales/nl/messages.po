@@ -4209,6 +4209,9 @@ msgstr "Agents controleren…"
 msgid "Checking environments…"
 msgstr "Omgevingen controleren…"
 
+msgid "Checking GitHub CLI…"
+msgstr "GitHub CLI controleren…"
+
 msgid "Checking host…"
 msgstr "Host controleren…"
 
@@ -4220,6 +4223,9 @@ msgstr "Een PR uitchecken vereist een project"
 
 msgid "Checking pull requests in {what}"
 msgstr "Pull requests in {what} controleren"
+
+msgid "Checking the download…"
+msgstr "Download controleren…"
 
 msgid "Checking workspaces"
 msgstr "Werkruimtes controleren"
@@ -5236,6 +5242,9 @@ msgstr "Verbonden met"
 msgid "Connected to {connectedOrgName}"
 msgstr "Verbonden met {connectedOrgName}"
 
+msgid "Connected to GitHub"
+msgstr "Verbonden met GitHub"
+
 msgid "Connected to GitHub as {accountLogin}"
 msgstr "Verbonden met GitHub als {accountLogin}"
 
@@ -6006,6 +6015,9 @@ msgstr "Kan gestagede wijzigingen niet verwerpen"
 msgid "Couldn't discard unstaged changes"
 msgstr "Kan niet-gestagede wijzigingen niet verwerpen"
 
+msgid "Couldn't download GitHub CLI. Check your internet connection and try again."
+msgstr "Kan GitHub CLI niet downloaden. Controleer je internetverbinding en probeer het opnieuw."
+
 msgid "Couldn't edit the message"
 msgstr "Kan het bericht niet bewerken"
 
@@ -6020,6 +6032,9 @@ msgstr "Kon dit niet aan een agent overdragen"
 
 msgid "Couldn't import"
 msgstr "Importeren mislukt"
+
+msgid "Couldn't install GitHub CLI."
+msgstr "Kan GitHub CLI niet installeren."
 
 msgid "Couldn't load {filename}"
 msgstr "Kan {filename} niet laden"
@@ -7476,6 +7491,9 @@ msgstr "gedownload"
 
 msgid "Downloading"
 msgstr "Downloaden"
+
+msgid "Downloading GitHub CLI…"
+msgstr "GitHub CLI downloaden…"
 
 msgid "Downloading..."
 msgstr "Downloaden..."
@@ -9309,6 +9327,9 @@ msgstr "Download de iPhone- en iPad-app"
 msgid "Gets an invite to join {organizationName}"
 msgstr "Krijgt een uitnodiging voor {organizationName}"
 
+msgid "Getting a sign-in code from GitHub…"
+msgstr "Inlogcode ophalen bij GitHub…"
+
 msgid "Getting Work Done"
 msgstr "Werk gedaan krijgen"
 
@@ -10276,6 +10297,9 @@ msgstr "Geïnstalleerd via"
 
 msgid "Installing..."
 msgstr "Installeren..."
+
+msgid "Installing…"
+msgstr "Installeren…"
 
 msgid "Installs Paradev on a machine you can reach with ssh, signs Paradev in to your account, and keeps it running as a service."
 msgstr "Installeert Paradev op een machine die je via ssh bereikt, meldt Paradev aan bij je account en houdt Paradev actief als service."
@@ -13114,6 +13138,9 @@ msgstr "Niet inbegrepen"
 msgid "Not installed"
 msgstr "Niet geïnstalleerd"
 
+msgid "Not installed · needed for private repos and pull requests"
+msgstr "Niet geïnstalleerd · nodig voor privérepository's en pull requests"
+
 msgid "Not loaded"
 msgstr "Niet geladen"
 
@@ -13152,6 +13179,9 @@ msgstr "Niet ingesteld op deze host"
 
 msgid "Not signed in"
 msgstr "Niet aangemeld"
+
+msgid "Not signed in · needed for private repos and pull requests"
+msgstr "Niet ingelogd · nodig voor privérepository's en pull requests"
 
 msgid "not sorted"
 msgstr "niet gesorteerd"
@@ -13693,6 +13723,12 @@ msgstr "Openen vanuit map"
 msgid "Open full screen"
 msgstr "Openen op volledig scherm"
 
+msgid "Open GitHub"
+msgstr "GitHub openen"
+
+msgid "Open GitHub and enter this code."
+msgstr "Open GitHub en voer deze code in."
+
 msgid "Open host"
 msgstr "Host openen"
 
@@ -13959,6 +13995,9 @@ msgstr "Opent het wijzigingenpaneel in een nieuw tabblad, of focust het bestaand
 
 msgid "Open the disk image from your <0>Downloads</0> folder"
 msgstr "Open de schijfkopie vanuit je map <0>Downloads</0>"
+
+msgid "Open the download page"
+msgstr "Downloadpagina openen"
 
 msgid "Open the file to see all of it or edit it."
 msgstr "Open het bestand om het volledig te zien of te bewerken."
@@ -18157,6 +18196,9 @@ msgstr "Registreren met Google"
 msgid "Sign-in didn't finish"
 msgstr "Inloggen is niet voltooid"
 
+msgid "Sign-in didn't finish."
+msgstr "Inloggen is niet voltooid."
+
 msgid "Sign-in expired"
 msgstr "Login verlopen"
 
@@ -18174,6 +18216,9 @@ msgstr "Voltooiingsgraad aanmeldingen"
 
 msgid "Sign-up steps"
 msgstr "Aanmeldstappen"
+
+msgid "Signed in · clones private repos and opens pull requests"
+msgstr "Ingelogd · kloont privérepository's en opent pull requests"
 
 msgid "Signed in as <0>{userName}</0>"
 msgstr "Ingelogd als <0>{userName}</0>"
@@ -18276,6 +18321,9 @@ msgstr "Alles overslaan"
 
 msgid "Skip for now"
 msgstr "Nu overslaan"
+
+msgid "Skip GitHub for now?"
+msgstr "GitHub voorlopig overslaan?"
 
 msgid "Skipped"
 msgstr "Overgeslagen"
@@ -19596,6 +19644,9 @@ msgstr "De diff is nog actueel — alleen de opmerkingen konden niet worden gela
 
 msgid "The dispatcher appears"
 msgstr "De dispatcher verschijnt"
+
+msgid "The download didn't match GitHub's checksum, so it wasn't installed. Try again."
+msgstr "De download kwam niet overeen met de checksum van GitHub en is daarom niet geïnstalleerd. Probeer het opnieuw."
 
 msgid "The endpoint must use https."
 msgstr "Het endpoint moet https gebruiken."
@@ -21530,6 +21581,9 @@ msgstr "Wachten op goedkeuring. Houd dit venster open."
 msgid "Waiting for Checks"
 msgstr "Wachten op checks"
 
+msgid "Waiting for GitHub…"
+msgstr "Wachten op GitHub…"
+
 msgid "Waiting for it to connect…"
 msgstr "Wachten op verbinding…"
 
@@ -22283,6 +22337,9 @@ msgstr "Je kunt het 30 dagen lang herstellen via Instellingen → Projecten. De 
 
 msgid "You can see how we work before you talk to us."
 msgstr "Je kunt zien hoe we werken voordat je met ons praat."
+
+msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings."
+msgstr "Je kunt nog steeds openbare repository's klonen. Voor privérepository's en pull requests moet GitHub verbonden zijn. Je kunt dit later doen in Instellingen."
 
 msgid "You can view this page but not change it"
 msgstr "Je kunt deze pagina bekijken, maar niet wijzigen"

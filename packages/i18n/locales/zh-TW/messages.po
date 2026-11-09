@@ -4209,6 +4209,9 @@ msgstr "正在檢查代理程式…"
 msgid "Checking environments…"
 msgstr "正在檢查環境…"
 
+msgid "Checking GitHub CLI…"
+msgstr "正在檢查 GitHub CLI…"
+
 msgid "Checking host…"
 msgstr "正在檢查主機…"
 
@@ -4220,6 +4223,9 @@ msgstr "檢出PR需要一個專案"
 
 msgid "Checking pull requests in {what}"
 msgstr "正在檢查 {what} 的拉取請求"
+
+msgid "Checking the download…"
+msgstr "正在驗證下載…"
 
 msgid "Checking workspaces"
 msgstr "正在檢查工作區"
@@ -5236,6 +5242,9 @@ msgstr "已連線到"
 msgid "Connected to {connectedOrgName}"
 msgstr "已連線到{connectedOrgName}"
 
+msgid "Connected to GitHub"
+msgstr "已連線到 GitHub"
+
 msgid "Connected to GitHub as {accountLogin}"
 msgstr "已以 {accountLogin} 身分連結 GitHub"
 
@@ -6006,6 +6015,9 @@ msgstr "無法放棄已暫存的更改"
 msgid "Couldn't discard unstaged changes"
 msgstr "無法放棄未暫存的更改"
 
+msgid "Couldn't download GitHub CLI. Check your internet connection and try again."
+msgstr "無法下載 GitHub CLI。請檢查網路連線後再試一次。"
+
 msgid "Couldn't edit the message"
 msgstr "無法編輯該訊息"
 
@@ -6020,6 +6032,9 @@ msgstr "無法交給代理程式處理"
 
 msgid "Couldn't import"
 msgstr "無法匯入"
+
+msgid "Couldn't install GitHub CLI."
+msgstr "無法安裝 GitHub CLI。"
 
 msgid "Couldn't load {filename}"
 msgstr "無法載入 {filename}"
@@ -7476,6 +7491,9 @@ msgstr "已下載"
 
 msgid "Downloading"
 msgstr "下載中"
+
+msgid "Downloading GitHub CLI…"
+msgstr "正在下載 GitHub CLI…"
 
 msgid "Downloading..."
 msgstr "正在下載..."
@@ -9309,6 +9327,9 @@ msgstr "取得 iPhone 和 iPad 應用程式"
 msgid "Gets an invite to join {organizationName}"
 msgstr "將收到加入 {organizationName} 的邀請"
 
+msgid "Getting a sign-in code from GitHub…"
+msgstr "正在從 GitHub 取得登入代碼…"
+
 msgid "Getting Work Done"
 msgstr "工作常用"
 
@@ -10276,6 +10297,9 @@ msgstr "安裝方式"
 
 msgid "Installing..."
 msgstr "正在安裝..."
+
+msgid "Installing…"
+msgstr "正在安裝…"
 
 msgid "Installs Paradev on a machine you can reach with ssh, signs Paradev in to your account, and keeps it running as a service."
 msgstr "在可透過 ssh 連線的機器上安裝 Paradev，將 Paradev 登入你的帳戶，並讓它以服務形式持續執行。"
@@ -13114,6 +13138,9 @@ msgstr "不包含"
 msgid "Not installed"
 msgstr "未安裝"
 
+msgid "Not installed · needed for private repos and pull requests"
+msgstr "未安裝 · 私人儲存庫和拉取請求需要它"
+
 msgid "Not loaded"
 msgstr "未載入"
 
@@ -13152,6 +13179,9 @@ msgstr "尚未在此主機上配置"
 
 msgid "Not signed in"
 msgstr "未登入"
+
+msgid "Not signed in · needed for private repos and pull requests"
+msgstr "未登入 · 私人儲存庫和拉取請求需要它"
 
 msgid "not sorted"
 msgstr "未排序"
@@ -13693,6 +13723,12 @@ msgstr "從資料夾開啟"
 msgid "Open full screen"
 msgstr "全螢幕開啟"
 
+msgid "Open GitHub"
+msgstr "開啟 GitHub"
+
+msgid "Open GitHub and enter this code."
+msgstr "開啟 GitHub 並輸入此代碼。"
+
 msgid "Open host"
 msgstr "開啟主機"
 
@@ -13959,6 +13995,9 @@ msgstr "在新分頁中開啟更改面板，或聚焦現有面板"
 
 msgid "Open the disk image from your <0>Downloads</0> folder"
 msgstr "從<0>下載項目</0>資料夾開啟磁碟映像檔"
+
+msgid "Open the download page"
+msgstr "開啟下載頁面"
 
 msgid "Open the file to see all of it or edit it."
 msgstr "開啟檔案以檢視完整內容或進行編輯。"
@@ -18157,6 +18196,9 @@ msgstr "使用Google註冊"
 msgid "Sign-in didn't finish"
 msgstr "登入未完成"
 
+msgid "Sign-in didn't finish."
+msgstr "登入未完成。"
+
 msgid "Sign-in expired"
 msgstr "登入已過期"
 
@@ -18174,6 +18216,9 @@ msgstr "註冊完成率"
 
 msgid "Sign-up steps"
 msgstr "註冊步驟"
+
+msgid "Signed in · clones private repos and opens pull requests"
+msgstr "已登入 · 用於克隆私人儲存庫和建立拉取請求"
 
 msgid "Signed in as <0>{userName}</0>"
 msgstr "已登入為<0>{userName}</0>"
@@ -18276,6 +18321,9 @@ msgstr "全部跳過"
 
 msgid "Skip for now"
 msgstr "暫時跳過"
+
+msgid "Skip GitHub for now?"
+msgstr "暫時略過 GitHub？"
 
 msgid "Skipped"
 msgstr "已跳過"
@@ -19596,6 +19644,9 @@ msgstr "差異仍是最新的，只是評論沒能載入。"
 
 msgid "The dispatcher appears"
 msgstr "排程員出現"
+
+msgid "The download didn't match GitHub's checksum, so it wasn't installed. Try again."
+msgstr "下載內容與 GitHub 的校驗碼不符，因此未安裝。請再試一次。"
 
 msgid "The endpoint must use https."
 msgstr "端點必須使用 https。"
@@ -21530,6 +21581,9 @@ msgstr "正在等待核准。請保持此對話方塊開啟。"
 msgid "Waiting for Checks"
 msgstr "等待檢查"
 
+msgid "Waiting for GitHub…"
+msgstr "正在等待 GitHub…"
+
 msgid "Waiting for it to connect…"
 msgstr "正在等待連線…"
 
@@ -22283,6 +22337,9 @@ msgstr "你可以在 30 天內從「設定 → 專案」還原。儲存庫資料
 
 msgid "You can see how we work before you talk to us."
 msgstr "在與我們交流之前，你就能看到我們是如何工作的。"
+
+msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings."
+msgstr "你仍然可以克隆公開儲存庫。私人儲存庫和拉取請求需要連線 GitHub。你可以稍後在設定中連線。"
 
 msgid "You can view this page but not change it"
 msgstr "你可以檢視此頁面，但不能變更"

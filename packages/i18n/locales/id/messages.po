@@ -4209,6 +4209,9 @@ msgstr "Memeriksa agen…"
 msgid "Checking environments…"
 msgstr "Memeriksa environment…"
 
+msgid "Checking GitHub CLI…"
+msgstr "Memeriksa GitHub CLI…"
+
 msgid "Checking host…"
 msgstr "Memeriksa host…"
 
@@ -4220,6 +4223,9 @@ msgstr "Checkout PR memerlukan sebuah proyek"
 
 msgid "Checking pull requests in {what}"
 msgstr "Memeriksa pull request di {what}"
+
+msgid "Checking the download…"
+msgstr "Memeriksa unduhan…"
 
 msgid "Checking workspaces"
 msgstr "Memeriksa workspace"
@@ -5236,6 +5242,9 @@ msgstr "Terhubung ke"
 msgid "Connected to {connectedOrgName}"
 msgstr "Terhubung ke {connectedOrgName}"
 
+msgid "Connected to GitHub"
+msgstr "Terhubung ke GitHub"
+
 msgid "Connected to GitHub as {accountLogin}"
 msgstr "Terhubung ke GitHub sebagai {accountLogin}"
 
@@ -6006,6 +6015,9 @@ msgstr "Tidak bisa membuang perubahan yang di-stage"
 msgid "Couldn't discard unstaged changes"
 msgstr "Tidak bisa membuang perubahan yang belum di-stage"
 
+msgid "Couldn't download GitHub CLI. Check your internet connection and try again."
+msgstr "Tidak dapat mengunduh GitHub CLI. Periksa koneksi internet Anda lalu coba lagi."
+
 msgid "Couldn't edit the message"
 msgstr "Tidak dapat mengedit pesan"
 
@@ -6020,6 +6032,9 @@ msgstr "Tidak dapat menyerahkan ini ke agen"
 
 msgid "Couldn't import"
 msgstr "Gagal mengimpor"
+
+msgid "Couldn't install GitHub CLI."
+msgstr "Tidak dapat memasang GitHub CLI."
 
 msgid "Couldn't load {filename}"
 msgstr "Tidak dapat memuat {filename}"
@@ -7476,6 +7491,9 @@ msgstr "terunduh"
 
 msgid "Downloading"
 msgstr "Mengunduh"
+
+msgid "Downloading GitHub CLI…"
+msgstr "Mengunduh GitHub CLI…"
 
 msgid "Downloading..."
 msgstr "Mengunduh..."
@@ -9309,6 +9327,9 @@ msgstr "Dapatkan aplikasi iPhone dan iPad"
 msgid "Gets an invite to join {organizationName}"
 msgstr "Akan menerima undangan untuk bergabung ke {organizationName}"
 
+msgid "Getting a sign-in code from GitHub…"
+msgstr "Mendapatkan kode masuk dari GitHub…"
+
 msgid "Getting Work Done"
 msgstr "Menyelesaikan Pekerjaan"
 
@@ -10276,6 +10297,9 @@ msgstr "Diinstal melalui"
 
 msgid "Installing..."
 msgstr "Memasang..."
+
+msgid "Installing…"
+msgstr "Memasang…"
 
 msgid "Installs Paradev on a machine you can reach with ssh, signs Paradev in to your account, and keeps it running as a service."
 msgstr "Memasang Paradev di mesin yang bisa Anda jangkau dengan ssh, menghubungkan Paradev ke akun Anda, dan menjaga Paradev tetap berjalan sebagai layanan."
@@ -13114,6 +13138,9 @@ msgstr "Tidak termasuk"
 msgid "Not installed"
 msgstr "Belum terpasang"
 
+msgid "Not installed · needed for private repos and pull requests"
+msgstr "Belum terpasang · diperlukan untuk repositori pribadi dan pull request"
+
 msgid "Not loaded"
 msgstr "Belum dimuat"
 
@@ -13152,6 +13179,9 @@ msgstr "Belum disiapkan di host ini"
 
 msgid "Not signed in"
 msgstr "Belum masuk"
+
+msgid "Not signed in · needed for private repos and pull requests"
+msgstr "Belum masuk · diperlukan untuk repositori pribadi dan pull request"
 
 msgid "not sorted"
 msgstr "tidak diurutkan"
@@ -13693,6 +13723,12 @@ msgstr "Buka dari folder"
 msgid "Open full screen"
 msgstr "Buka layar penuh"
 
+msgid "Open GitHub"
+msgstr "Buka GitHub"
+
+msgid "Open GitHub and enter this code."
+msgstr "Buka GitHub lalu masukkan kode ini."
+
 msgid "Open host"
 msgstr "Buka host"
 
@@ -13959,6 +13995,9 @@ msgstr "Buka panel Perubahan di tab baru, atau fokuskan yang sudah ada"
 
 msgid "Open the disk image from your <0>Downloads</0> folder"
 msgstr "Buka image disk dari folder <0>Unduhan</0>"
+
+msgid "Open the download page"
+msgstr "Buka halaman unduhan"
 
 msgid "Open the file to see all of it or edit it."
 msgstr "Buka file untuk melihat seluruhnya atau mengeditnya."
@@ -18157,6 +18196,9 @@ msgstr "Daftar dengan Google"
 msgid "Sign-in didn't finish"
 msgstr "Proses masuk tidak selesai"
 
+msgid "Sign-in didn't finish."
+msgstr "Proses masuk tidak selesai."
+
 msgid "Sign-in expired"
 msgstr "Sesi masuk kedaluwarsa"
 
@@ -18174,6 +18216,9 @@ msgstr "Penyelesaian pendaftaran"
 
 msgid "Sign-up steps"
 msgstr "Langkah pendaftaran"
+
+msgid "Signed in · clones private repos and opens pull requests"
+msgstr "Sudah masuk · mengklon repositori pribadi dan membuka pull request"
 
 msgid "Signed in as <0>{userName}</0>"
 msgstr "Masuk sebagai <0>{userName}</0>"
@@ -18276,6 +18321,9 @@ msgstr "Lewati Semua"
 
 msgid "Skip for now"
 msgstr "Lewati dulu"
+
+msgid "Skip GitHub for now?"
+msgstr "Lewati GitHub untuk sekarang?"
 
 msgid "Skipped"
 msgstr "Dilewati"
@@ -19596,6 +19644,9 @@ msgstr "Diff-nya tetap terbaru — hanya komentarnya yang gagal dimuat."
 
 msgid "The dispatcher appears"
 msgstr "Munculnya sang pengatur"
+
+msgid "The download didn't match GitHub's checksum, so it wasn't installed. Try again."
+msgstr "Unduhan tidak cocok dengan checksum GitHub, jadi tidak dipasang. Coba lagi."
 
 msgid "The endpoint must use https."
 msgstr "Endpoint harus menggunakan https."
@@ -21530,6 +21581,9 @@ msgstr "Menunggu persetujuan. Biarkan dialog ini tetap terbuka."
 msgid "Waiting for Checks"
 msgstr "Menunggu Check"
 
+msgid "Waiting for GitHub…"
+msgstr "Menunggu GitHub…"
+
 msgid "Waiting for it to connect…"
 msgstr "Menunggu terhubung…"
 
@@ -22283,6 +22337,9 @@ msgstr "Anda dapat memulihkannya dari Pengaturan → Proyek selama 30 hari. Fold
 
 msgid "You can see how we work before you talk to us."
 msgstr "Anda bisa melihat cara kami bekerja sebelum berbicara dengan kami."
+
+msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings."
+msgstr "Anda tetap bisa mengklon repositori publik. Repositori pribadi dan pull request memerlukan GitHub yang terhubung. Anda bisa menghubungkannya nanti di Pengaturan."
 
 msgid "You can view this page but not change it"
 msgstr "Anda dapat melihat halaman ini tetapi tidak dapat mengubahnya"

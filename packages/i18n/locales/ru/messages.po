@@ -4209,6 +4209,9 @@ msgstr "Проверка агентов…"
 msgid "Checking environments…"
 msgstr "Проверка окружений…"
 
+msgid "Checking GitHub CLI…"
+msgstr "Проверка GitHub CLI…"
+
 msgid "Checking host…"
 msgstr "Проверка хоста…"
 
@@ -4220,6 +4223,9 @@ msgstr "Для переключения на PR нужен проект"
 
 msgid "Checking pull requests in {what}"
 msgstr "Проверяю пул-реквесты в {what}"
+
+msgid "Checking the download…"
+msgstr "Проверка загрузки…"
 
 msgid "Checking workspaces"
 msgstr "Проверяю рабочие области"
@@ -5236,6 +5242,9 @@ msgstr "Подключено к"
 msgid "Connected to {connectedOrgName}"
 msgstr "Подключено к {connectedOrgName}"
 
+msgid "Connected to GitHub"
+msgstr "Подключено к GitHub"
+
 msgid "Connected to GitHub as {accountLogin}"
 msgstr "Подключено к GitHub как {accountLogin}"
 
@@ -6006,6 +6015,9 @@ msgstr "Не удалось отменить проиндексированны�
 msgid "Couldn't discard unstaged changes"
 msgstr "Не удалось отменить непроиндексированные изменения"
 
+msgid "Couldn't download GitHub CLI. Check your internet connection and try again."
+msgstr "Не удалось загрузить GitHub CLI. Проверьте подключение к интернету и попробуйте снова."
+
 msgid "Couldn't edit the message"
 msgstr "Не удалось изменить сообщение"
 
@@ -6020,6 +6032,9 @@ msgstr "Не удалось передать агенту"
 
 msgid "Couldn't import"
 msgstr "Не удалось импортировать"
+
+msgid "Couldn't install GitHub CLI."
+msgstr "Не удалось установить GitHub CLI."
 
 msgid "Couldn't load {filename}"
 msgstr "Не удалось загрузить {filename}"
@@ -7476,6 +7491,9 @@ msgstr "загружено"
 
 msgid "Downloading"
 msgstr "Загрузка"
+
+msgid "Downloading GitHub CLI…"
+msgstr "Загрузка GitHub CLI…"
 
 msgid "Downloading..."
 msgstr "Загрузка..."
@@ -9309,6 +9327,9 @@ msgstr "Скачать приложение для iPhone и iPad"
 msgid "Gets an invite to join {organizationName}"
 msgstr "Получит приглашение в {organizationName}"
 
+msgid "Getting a sign-in code from GitHub…"
+msgstr "Получение кода входа от GitHub…"
+
 msgid "Getting Work Done"
 msgstr "Для работы"
 
@@ -10276,6 +10297,9 @@ msgstr "Установлено через"
 
 msgid "Installing..."
 msgstr "Установка..."
+
+msgid "Installing…"
+msgstr "Установка…"
 
 msgid "Installs Paradev on a machine you can reach with ssh, signs Paradev in to your account, and keeps it running as a service."
 msgstr "Устанавливает Paradev на машину, доступную по ssh, выполняет вход Paradev в вашу учётную запись и держит Paradev запущенным как службу."
@@ -13114,6 +13138,9 @@ msgstr "Не входит"
 msgid "Not installed"
 msgstr "Не установлено"
 
+msgid "Not installed · needed for private repos and pull requests"
+msgstr "Не установлен · нужен для приватных репозиториев и пул-реквестов"
+
 msgid "Not loaded"
 msgstr "Не загружено"
 
@@ -13152,6 +13179,9 @@ msgstr "Не настроен на этом хосте"
 
 msgid "Not signed in"
 msgstr "Вход не выполнен"
+
+msgid "Not signed in · needed for private repos and pull requests"
+msgstr "Вход не выполнен · нужен для приватных репозиториев и пул-реквестов"
 
 msgid "not sorted"
 msgstr "без сортировки"
@@ -13693,6 +13723,12 @@ msgstr "Открыть из папки"
 msgid "Open full screen"
 msgstr "Открыть во весь экран"
 
+msgid "Open GitHub"
+msgstr "Открыть GitHub"
+
+msgid "Open GitHub and enter this code."
+msgstr "Откройте GitHub и введите этот код."
+
 msgid "Open host"
 msgstr "Открыть хост"
 
@@ -13959,6 +13995,9 @@ msgstr "Открывает панель изменений в новой вкл�
 
 msgid "Open the disk image from your <0>Downloads</0> folder"
 msgstr "Откройте образ диска из папки <0>Загрузки</0>"
+
+msgid "Open the download page"
+msgstr "Открыть страницу загрузки"
 
 msgid "Open the file to see all of it or edit it."
 msgstr "Откройте файл, чтобы увидеть его целиком или отредактировать."
@@ -18157,6 +18196,9 @@ msgstr "Зарегистрироваться через Google"
 msgid "Sign-in didn't finish"
 msgstr "Вход не завершён"
 
+msgid "Sign-in didn't finish."
+msgstr "Вход не завершён."
+
 msgid "Sign-in expired"
 msgstr "Срок входа истёк"
 
@@ -18174,6 +18216,9 @@ msgstr "Доля завершённых регистраций"
 
 msgid "Sign-up steps"
 msgstr "Шаги регистрации"
+
+msgid "Signed in · clones private repos and opens pull requests"
+msgstr "Вход выполнен · клонирует приватные репозитории и открывает пул-реквесты"
 
 msgid "Signed in as <0>{userName}</0>"
 msgstr "Вы вошли как <0>{userName}</0>"
@@ -18276,6 +18321,9 @@ msgstr "Пропустить всё"
 
 msgid "Skip for now"
 msgstr "Пока пропустить"
+
+msgid "Skip GitHub for now?"
+msgstr "Пропустить GitHub пока?"
 
 msgid "Skipped"
 msgstr "Пропущено"
@@ -19596,6 +19644,9 @@ msgstr "Diff актуален — не загрузились только ко�
 
 msgid "The dispatcher appears"
 msgstr "Появляется диспетчер"
+
+msgid "The download didn't match GitHub's checksum, so it wasn't installed. Try again."
+msgstr "Загрузка не совпала с контрольной суммой GitHub, поэтому не была установлена. Попробуйте снова."
 
 msgid "The endpoint must use https."
 msgstr "Конечная точка должна использовать https."
@@ -21530,6 +21581,9 @@ msgstr "Ожидание подтверждения. Не закрывайте �
 msgid "Waiting for Checks"
 msgstr "Ожидание проверок"
 
+msgid "Waiting for GitHub…"
+msgstr "Ожидание GitHub…"
+
 msgid "Waiting for it to connect…"
 msgstr "Ожидание подключения…"
 
@@ -22283,6 +22337,9 @@ msgstr "Его можно восстановить в разделе «Наст�
 
 msgid "You can see how we work before you talk to us."
 msgstr "Вы можете увидеть, как мы работаем, ещё до разговора с нами."
+
+msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings."
+msgstr "Публичные репозитории по-прежнему можно клонировать. Для приватных репозиториев и пул-реквестов нужно подключить GitHub. Это можно сделать позже в Настройках."
 
 msgid "You can view this page but not change it"
 msgstr "Вы можете просматривать эту страницу, но не изменять её"

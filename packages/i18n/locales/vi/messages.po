@@ -4209,6 +4209,9 @@ msgstr "Đang kiểm tra agent…"
 msgid "Checking environments…"
 msgstr "Đang kiểm tra môi trường…"
 
+msgid "Checking GitHub CLI…"
+msgstr "Đang kiểm tra GitHub CLI…"
+
 msgid "Checking host…"
 msgstr "Đang kiểm tra host…"
 
@@ -4220,6 +4223,9 @@ msgstr "Checkout một PR cần có dự án"
 
 msgid "Checking pull requests in {what}"
 msgstr "Đang kiểm tra pull request trong {what}"
+
+msgid "Checking the download…"
+msgstr "Đang kiểm tra tệp tải về…"
 
 msgid "Checking workspaces"
 msgstr "Đang kiểm tra workspace"
@@ -5236,6 +5242,9 @@ msgstr "Đã kết nối tới"
 msgid "Connected to {connectedOrgName}"
 msgstr "Đã kết nối với {connectedOrgName}"
 
+msgid "Connected to GitHub"
+msgstr "Đã kết nối với GitHub"
+
 msgid "Connected to GitHub as {accountLogin}"
 msgstr "Đã kết nối GitHub với tên {accountLogin}"
 
@@ -6006,6 +6015,9 @@ msgstr "Không thể bỏ các thay đổi đã stage"
 msgid "Couldn't discard unstaged changes"
 msgstr "Không thể bỏ các thay đổi chưa stage"
 
+msgid "Couldn't download GitHub CLI. Check your internet connection and try again."
+msgstr "Không tải được GitHub CLI. Hãy kiểm tra kết nối internet rồi thử lại."
+
 msgid "Couldn't edit the message"
 msgstr "Không thể chỉnh sửa tin nhắn"
 
@@ -6020,6 +6032,9 @@ msgstr "Không thể giao việc này cho agent"
 
 msgid "Couldn't import"
 msgstr "Không thể nhập"
+
+msgid "Couldn't install GitHub CLI."
+msgstr "Không cài đặt được GitHub CLI."
 
 msgid "Couldn't load {filename}"
 msgstr "Không thể tải {filename}"
@@ -7476,6 +7491,9 @@ msgstr "đã tải"
 
 msgid "Downloading"
 msgstr "Đang tải xuống"
+
+msgid "Downloading GitHub CLI…"
+msgstr "Đang tải GitHub CLI…"
 
 msgid "Downloading..."
 msgstr "Đang tải xuống..."
@@ -9309,6 +9327,9 @@ msgstr "Tải ứng dụng cho iPhone và iPad"
 msgid "Gets an invite to join {organizationName}"
 msgstr "Sẽ nhận lời mời tham gia {organizationName}"
 
+msgid "Getting a sign-in code from GitHub…"
+msgstr "Đang lấy mã đăng nhập từ GitHub…"
+
 msgid "Getting Work Done"
 msgstr "Làm việc"
 
@@ -10276,6 +10297,9 @@ msgstr "Cài đặt qua"
 
 msgid "Installing..."
 msgstr "Đang cài đặt..."
+
+msgid "Installing…"
+msgstr "Đang cài đặt…"
 
 msgid "Installs Paradev on a machine you can reach with ssh, signs Paradev in to your account, and keeps it running as a service."
 msgstr "Cài Paradev lên một máy bạn truy cập được bằng ssh, đăng nhập Paradev vào tài khoản của bạn và giữ Paradev chạy như một dịch vụ."
@@ -13114,6 +13138,9 @@ msgstr "Không có"
 msgid "Not installed"
 msgstr "Chưa cài đặt"
 
+msgid "Not installed · needed for private repos and pull requests"
+msgstr "Chưa cài đặt · cần cho kho mã riêng tư và pull request"
+
 msgid "Not loaded"
 msgstr "Chưa tải"
 
@@ -13152,6 +13179,9 @@ msgstr "Chưa thiết lập trên host này"
 
 msgid "Not signed in"
 msgstr "Chưa đăng nhập"
+
+msgid "Not signed in · needed for private repos and pull requests"
+msgstr "Chưa đăng nhập · cần cho kho mã riêng tư và pull request"
 
 msgid "not sorted"
 msgstr "chưa sắp xếp"
@@ -13693,6 +13723,12 @@ msgstr "Mở từ thư mục"
 msgid "Open full screen"
 msgstr "Mở toàn màn hình"
 
+msgid "Open GitHub"
+msgstr "Mở GitHub"
+
+msgid "Open GitHub and enter this code."
+msgstr "Mở GitHub và nhập mã này."
+
 msgid "Open host"
 msgstr "Mở host"
 
@@ -13959,6 +13995,9 @@ msgstr "Mở bảng thay đổi trong tab mới, hoặc chuyển tiêu điểm �
 
 msgid "Open the disk image from your <0>Downloads</0> folder"
 msgstr "Mở tệp ảnh đĩa từ thư mục <0>Tải về</0>"
+
+msgid "Open the download page"
+msgstr "Mở trang tải về"
 
 msgid "Open the file to see all of it or edit it."
 msgstr "Mở tệp để xem toàn bộ hoặc chỉnh sửa."
@@ -18157,6 +18196,9 @@ msgstr "Đăng ký bằng Google"
 msgid "Sign-in didn't finish"
 msgstr "Đăng nhập chưa hoàn tất"
 
+msgid "Sign-in didn't finish."
+msgstr "Đăng nhập chưa hoàn tất."
+
 msgid "Sign-in expired"
 msgstr "Đăng nhập đã hết hạn"
 
@@ -18174,6 +18216,9 @@ msgstr "Tỷ lệ hoàn tất đăng ký"
 
 msgid "Sign-up steps"
 msgstr "Số bước đăng ký"
+
+msgid "Signed in · clones private repos and opens pull requests"
+msgstr "Đã đăng nhập · sao chép kho mã riêng tư và mở pull request"
 
 msgid "Signed in as <0>{userName}</0>"
 msgstr "Đang đăng nhập với <0>{userName}</0>"
@@ -18276,6 +18321,9 @@ msgstr "Bỏ qua tất cả"
 
 msgid "Skip for now"
 msgstr "Bỏ qua bây giờ"
+
+msgid "Skip GitHub for now?"
+msgstr "Bỏ qua GitHub lúc này?"
 
 msgid "Skipped"
 msgstr "Đã bỏ qua"
@@ -19596,6 +19644,9 @@ msgstr "Diff vẫn là mới nhất — chỉ có bình luận không tải đư
 
 msgid "The dispatcher appears"
 msgstr "Người điều phối xuất hiện"
+
+msgid "The download didn't match GitHub's checksum, so it wasn't installed. Try again."
+msgstr "Tệp tải về không khớp với checksum của GitHub nên chưa được cài đặt. Hãy thử lại."
 
 msgid "The endpoint must use https."
 msgstr "Endpoint phải dùng https."
@@ -21530,6 +21581,9 @@ msgstr "Đang chờ phê duyệt. Hãy giữ hộp thoại này mở."
 msgid "Waiting for Checks"
 msgstr "Đang chờ check"
 
+msgid "Waiting for GitHub…"
+msgstr "Đang chờ GitHub…"
+
 msgid "Waiting for it to connect…"
 msgstr "Đang chờ kết nối…"
 
@@ -22283,6 +22337,9 @@ msgstr "Bạn có thể khôi phục trong Cài đặt → Dự án trong 30 ng�
 
 msgid "You can see how we work before you talk to us."
 msgstr "Bạn có thể xem cách chúng tôi làm việc trước khi trò chuyện với chúng tôi."
+
+msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings."
+msgstr "Bạn vẫn có thể sao chép kho mã công khai. Kho mã riêng tư và pull request cần kết nối GitHub. Bạn có thể kết nối sau trong Cài đặt."
 
 msgid "You can view this page but not change it"
 msgstr "Bạn có thể xem trang này nhưng không thể thay đổi"

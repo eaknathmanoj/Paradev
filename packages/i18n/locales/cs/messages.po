@@ -4209,6 +4209,9 @@ msgstr "Kontroluji agenty…"
 msgid "Checking environments…"
 msgstr "Kontrola prostředí…"
 
+msgid "Checking GitHub CLI…"
+msgstr "Kontroluji GitHub CLI…"
+
 msgid "Checking host…"
 msgstr "Kontroluji hosta…"
 
@@ -4220,6 +4223,9 @@ msgstr "Checkout PR vyžaduje projekt"
 
 msgid "Checking pull requests in {what}"
 msgstr "Kontroluji pull requesty v {what}"
+
+msgid "Checking the download…"
+msgstr "Kontroluji stažený soubor…"
 
 msgid "Checking workspaces"
 msgstr "Kontroluji pracovní prostory"
@@ -5236,6 +5242,9 @@ msgstr "Připojeno k"
 msgid "Connected to {connectedOrgName}"
 msgstr "Připojeno k {connectedOrgName}"
 
+msgid "Connected to GitHub"
+msgstr "Připojeno ke GitHubu"
+
 msgid "Connected to GitHub as {accountLogin}"
 msgstr "Propojeno s GitHubem jako {accountLogin}"
 
@@ -6006,6 +6015,9 @@ msgstr "Nepodařilo se zahodit připravené změny"
 msgid "Couldn't discard unstaged changes"
 msgstr "Nepodařilo se zahodit nepřipravené změny"
 
+msgid "Couldn't download GitHub CLI. Check your internet connection and try again."
+msgstr "GitHub CLI se nepodařilo stáhnout. Zkontrolujte připojení k internetu a zkuste to znovu."
+
 msgid "Couldn't edit the message"
 msgstr "Zprávu se nepodařilo upravit"
 
@@ -6020,6 +6032,9 @@ msgstr "Nepodařilo se předat agentovi"
 
 msgid "Couldn't import"
 msgstr "Import se nezdařil"
+
+msgid "Couldn't install GitHub CLI."
+msgstr "GitHub CLI se nepodařilo nainstalovat."
 
 msgid "Couldn't load {filename}"
 msgstr "Soubor {filename} se nepodařilo načíst"
@@ -7476,6 +7491,9 @@ msgstr "staženo"
 
 msgid "Downloading"
 msgstr "Stahování"
+
+msgid "Downloading GitHub CLI…"
+msgstr "Stahuji GitHub CLI…"
 
 msgid "Downloading..."
 msgstr "Stahuji..."
@@ -9309,6 +9327,9 @@ msgstr "Stáhnout aplikaci pro iPhone a iPad"
 msgid "Gets an invite to join {organizationName}"
 msgstr "Dostane pozvánku do {organizationName}"
 
+msgid "Getting a sign-in code from GitHub…"
+msgstr "Získávám přihlašovací kód z GitHubu…"
+
 msgid "Getting Work Done"
 msgstr "Pracovní"
 
@@ -10276,6 +10297,9 @@ msgstr "Nainstalováno přes"
 
 msgid "Installing..."
 msgstr "Instaluji..."
+
+msgid "Installing…"
+msgstr "Instaluji…"
 
 msgid "Installs Paradev on a machine you can reach with ssh, signs Paradev in to your account, and keeps it running as a service."
 msgstr "Nainstaluje Paradev na počítač dostupný přes ssh, přihlásí Paradev k vašemu účtu a udržuje Paradev spuštěný jako službu."
@@ -13114,6 +13138,9 @@ msgstr "Není zahrnuto"
 msgid "Not installed"
 msgstr "Nenainstalováno"
 
+msgid "Not installed · needed for private repos and pull requests"
+msgstr "Nenainstalováno · potřeba pro soukromé repozitáře a pull requesty"
+
 msgid "Not loaded"
 msgstr "Nenačteno"
 
@@ -13152,6 +13179,9 @@ msgstr "Na tomto hostu není nastaveno"
 
 msgid "Not signed in"
 msgstr "Nepřihlášeno"
+
+msgid "Not signed in · needed for private repos and pull requests"
+msgstr "Nepřihlášeno · potřeba pro soukromé repozitáře a pull requesty"
 
 msgid "not sorted"
 msgstr "neseřazeno"
@@ -13693,6 +13723,12 @@ msgstr "Otevřít ze složky"
 msgid "Open full screen"
 msgstr "Otevřít na celou obrazovku"
 
+msgid "Open GitHub"
+msgstr "Otevřít GitHub"
+
+msgid "Open GitHub and enter this code."
+msgstr "Otevřete GitHub a zadejte tento kód."
+
 msgid "Open host"
 msgstr "Otevřít host"
 
@@ -13959,6 +13995,9 @@ msgstr "Otevře panel Změny na nové kartě, nebo zaměří existující"
 
 msgid "Open the disk image from your <0>Downloads</0> folder"
 msgstr "Otevřete obraz disku ze složky <0>Stažené soubory</0>"
+
+msgid "Open the download page"
+msgstr "Otevřít stránku ke stažení"
 
 msgid "Open the file to see all of it or edit it."
 msgstr "Otevřete soubor, abyste ho viděli celý nebo ho upravili."
@@ -18157,6 +18196,9 @@ msgstr "Zaregistrovat se přes Google"
 msgid "Sign-in didn't finish"
 msgstr "Přihlášení se nedokončilo"
 
+msgid "Sign-in didn't finish."
+msgstr "Přihlášení nebylo dokončeno."
+
 msgid "Sign-in expired"
 msgstr "Přihlášení vypršelo"
 
@@ -18174,6 +18216,9 @@ msgstr "Dokončení registrace"
 
 msgid "Sign-up steps"
 msgstr "Kroky registrace"
+
+msgid "Signed in · clones private repos and opens pull requests"
+msgstr "Přihlášeno · klonuje soukromé repozitáře a otevírá pull requesty"
 
 msgid "Signed in as <0>{userName}</0>"
 msgstr "Přihlášeni jako <0>{userName}</0>"
@@ -18276,6 +18321,9 @@ msgstr "Přeskočit vše"
 
 msgid "Skip for now"
 msgstr "Zatím přeskočit"
+
+msgid "Skip GitHub for now?"
+msgstr "Prozatím GitHub přeskočit?"
 
 msgid "Skipped"
 msgstr "Přeskočeno"
@@ -19596,6 +19644,9 @@ msgstr "Rozdíly jsou stále aktuální — nenačetly se jen komentáře."
 
 msgid "The dispatcher appears"
 msgstr "Nastupuje dispečer"
+
+msgid "The download didn't match GitHub's checksum, so it wasn't installed. Try again."
+msgstr "Stažený soubor neodpovídal kontrolnímu součtu GitHubu, proto nebyl nainstalován. Zkuste to znovu."
 
 msgid "The endpoint must use https."
 msgstr "Koncový bod musí používat https."
@@ -21530,6 +21581,9 @@ msgstr "Čeká se na schválení. Nechte tento dialog otevřený."
 msgid "Waiting for Checks"
 msgstr "Čeká na kontroly"
 
+msgid "Waiting for GitHub…"
+msgstr "Čekám na GitHub…"
+
 msgid "Waiting for it to connect…"
 msgstr "Čeká se na připojení…"
 
@@ -22283,6 +22337,9 @@ msgstr "Můžete ho obnovit v Nastavení → Projekty po dobu 30 dnů. Složka r
 
 msgid "You can see how we work before you talk to us."
 msgstr "Než s námi začnete mluvit, můžete vidět, jak pracujeme."
+
+msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings."
+msgstr "Veřejné repozitáře můžete klonovat i nadále. Soukromé repozitáře a pull requesty vyžadují připojený GitHub. Připojit ho můžete později v Nastavení."
 
 msgid "You can view this page but not change it"
 msgstr "Tuto stránku můžete zobrazit, ale ne změnit"

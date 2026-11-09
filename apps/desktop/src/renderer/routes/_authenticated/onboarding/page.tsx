@@ -4,7 +4,10 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { SiGithub } from "react-icons/si";
 import { electronTrpc } from "renderer/lib/electron-trpc";
-import { GhAuthDialog, type GhAuthDialogMode } from "./components/GhAuthDialog";
+import {
+	GitHubCliDialog,
+	type GitHubCliDialogStart,
+} from "renderer/routes/_authenticated/components/GitHubCliDialog";
 import { OnboardingTile } from "./components/OnboardingTile";
 
 export const Route = createFileRoute("/_authenticated/onboarding/")({
@@ -13,25 +16,24 @@ export const Route = createFileRoute("/_authenticated/onboarding/")({
 
 const PREREQ_POLL_MS = 4000;
 const GH_CLI_HOME_URL = "https://cli.github.com/";
-const GH_CLI_MACOS_PKG_URL = "https://github.com/cli/cli/releases/latest";
 const isMac = navigator.platform.toUpperCase().includes("MAC");
 
 function OnboardingDashboardPage() {
 	const { t } = useLingui();
-	const [ghDialogMode, setGhDialogMode] = useState<GhAuthDialogMode | null>(
-		null,
+	const [ghDialogStart, setGhDialogStart] =
+		useState<GitHubCliDialogStart | null>(null);
+
+	// Polls even while the window is unfocused, so a gh installed or signed in
+	// from a terminal shows up without switching back to the app.
+	const { data: ghStatus, isPending: isPendingGh } =
+		electronTrpc.system.detectGhCli.useQuery(undefined, {
+			refetchInterval: PREREQ_POLL_MS,
+			refetchIntervalInBackground: true,
+		});
+	const { data: brewStatus } = electronTrpc.system.detectBrew.useQuery(
+		undefined,
+		{ enabled: !isMac },
 	);
-
-	// Poll while mounted so external changes (installing gh in a browser,
-	// signing in from a terminal) are picked up without a focus change.
-	const statusPolling = { refetchInterval: PREREQ_POLL_MS } as const;
-
-	const {
-		data: ghStatus,
-		refetch: refetchGh,
-		isPending: isPendingGh,
-	} = electronTrpc.system.detectGhCli.useQuery(undefined, statusPolling);
-	const { data: brewStatus } = electronTrpc.system.detectBrew.useQuery();
 
 	const ghInstalled = ghStatus?.installed === true;
 	const ghReady = ghInstalled && ghStatus?.authenticated === true;
@@ -42,18 +44,12 @@ function OnboardingDashboardPage() {
 			? t`Not signed in`
 			: t`Not installed`;
 
-	const brewAvailable = brewStatus?.installed === true;
-
 	const openGitHubInstall = () => {
-		if (brewAvailable) {
-			setGhDialogMode("install");
+		if (isMac || brewStatus?.installed === true) {
+			setGhDialogStart("install");
 			return;
 		}
-		window.open(
-			isMac ? GH_CLI_MACOS_PKG_URL : GH_CLI_HOME_URL,
-			"_blank",
-			"noopener,noreferrer",
-		);
+		window.open(GH_CLI_HOME_URL, "_blank", "noopener,noreferrer");
 	};
 
 	const statusDot = (
@@ -95,20 +91,19 @@ function OnboardingDashboardPage() {
 						ghReady
 							? () => {}
 							: ghInstalled
-								? () => setGhDialogMode("auth")
+								? () => setGhDialogStart("auth")
 								: openGitHubInstall
 					}
 					disabled={isPendingGh}
 				/>
 			</div>
 
-			<GhAuthDialog
-				open={ghDialogMode !== null}
-				mode={ghDialogMode ?? "auth"}
+			<GitHubCliDialog
+				open={ghDialogStart !== null}
+				startWith={ghDialogStart ?? "auth"}
 				onOpenChange={(open) => {
-					if (!open) setGhDialogMode(null);
+					if (!open) setGhDialogStart(null);
 				}}
-				onExit={() => void refetchGh()}
 			/>
 		</>
 	);
