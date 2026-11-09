@@ -39,6 +39,10 @@ export function GitSettings({ visibleItems }: GitSettingsProps) {
 		SETTING_ITEM_ID.GIT_DELETE_LOCAL_BRANCH,
 		visibleItems,
 	);
+	const showGitHubCli = isItemVisible(
+		SETTING_ITEM_ID.GIT_GITHUB_CLI,
+		visibleItems,
+	);
 	const showBranchPrefix = isItemVisible(
 		SETTING_ITEM_ID.GIT_BRANCH_PREFIX,
 		visibleItems,
@@ -139,7 +143,7 @@ export function GitSettings({ visibleItems }: GitSettingsProps) {
 			</div>
 
 			<div className="space-y-6">
-				<GitHubCliRow />
+				{showGitHubCli && <GitHubCliRow />}
 				{showDeleteLocalBranch && (
 					<div className="flex items-center justify-between">
 						<div className="space-y-0.5">

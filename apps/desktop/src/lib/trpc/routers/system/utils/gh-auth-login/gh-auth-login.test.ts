@@ -9,14 +9,21 @@ import {
 
 function fakeDeps(gitUsable: boolean) {
 	const ghCalls: string[][] = [];
-	const state = { pending: false, loginArgs: [] as string[] };
+	const state = {
+		pending: false,
+		loginArgs: [] as string[],
+		loginPath: "",
+	};
 	const deps: GhAuthLoginDeps = {
 		hasUsableGit: async () => gitUsable,
+		toolEnv: async () => ({ PATH: "/opt/homebrew/bin:/usr/bin:/bin" }),
+		gitShimDir: async () => "/app-home/gh-git-shim",
 		runGh: async (args) => {
 			ghCalls.push(args);
 		},
-		spawnGh: (args) => {
+		spawnGh: (args, env) => {
 			state.loginArgs = args;
+			state.loginPath = env.PATH ?? "";
 			let emitOutput: (chunk: string) => void = () => {};
 			return {
 				onOutput: (listener) => {
@@ -54,6 +61,7 @@ describe("gh sign-in", () => {
 
 		expect(events.map((event) => event.type)).toEqual(["code", "done"]);
 		expect(state.loginArgs).toContain("https");
+		expect(state.loginPath).toBe("/opt/homebrew/bin:/usr/bin:/bin");
 		expect(ghCalls).toEqual([
 			["auth", "setup-git", "--hostname", "github.com"],
 		]);
@@ -67,6 +75,9 @@ describe("gh sign-in", () => {
 		expect(events.map((event) => event.type)).toEqual(["code", "done"]);
 		expect(state.loginArgs).toContain("ssh");
 		expect(state.loginArgs).toContain("--skip-ssh-key");
+		expect(state.loginPath).toBe(
+			"/app-home/gh-git-shim:/opt/homebrew/bin:/usr/bin:/bin",
+		);
 		expect(ghCalls).toEqual([
 			["config", "set", "-h", "github.com", "git_protocol", "https"],
 		]);

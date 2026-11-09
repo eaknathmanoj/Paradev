@@ -31,38 +31,40 @@ export function createGhCliDeps(): GhAuthLoginDeps {
 				fileExists: fs.existsSync,
 			});
 		},
+		toolEnv,
+		gitShimDir: async () => {
+			const dir = path.join(resolveAppHomeDir(), "gh-git-shim");
+			await fs.promises.mkdir(dir, { recursive: true });
+			const shim = path.join(dir, "git");
+			await fs.promises.writeFile(shim, "#!/bin/sh\nexit 1\n");
+			await fs.promises.chmod(shim, 0o755);
+			return dir;
+		},
 		runGh: async (args) => {
 			await execFileAsync("gh", args, {
 				env: await toolEnv(),
 				timeout: 15_000,
 			});
 		},
-		spawnGh: (args) => {
-			const ready = toolEnv().then((env) =>
-				spawn("gh", args, { env, stdio: ["ignore", "pipe", "pipe"] }),
-			);
+		spawnGh: (args, env) => {
+			const child = spawn("gh", args, {
+				env,
+				stdio: ["ignore", "pipe", "pipe"],
+			});
 			const listeners: Array<(chunk: string) => void> = [];
-			let killed = false;
-			const exited = ready.then(
-				(child) =>
-					new Promise<number | null>((resolve) => {
-						if (killed) child.kill();
-						const forward = (data: Buffer) => {
-							for (const listener of listeners) listener(data.toString("utf8"));
-						};
-						child.stdout?.on("data", forward);
-						child.stderr?.on("data", forward);
-						child.on("error", () => resolve(null));
-						child.on("close", (code) => resolve(code));
-					}),
-			);
+			const forward = (data: Buffer) => {
+				for (const listener of listeners) listener(data.toString("utf8"));
+			};
+			child.stdout?.on("data", forward);
+			child.stderr?.on("data", forward);
+			const exited = new Promise<number | null>((resolve) => {
+				child.on("error", () => resolve(null));
+				child.on("close", (code) => resolve(code));
+			});
 			return {
 				onOutput: (listener) => listeners.push(listener),
 				exited,
-				kill: () => {
-					killed = true;
-					void ready.then((child) => child.kill());
-				},
+				kill: () => child.kill(),
 			};
 		},
 		isGitSetupPending: async () => fs.existsSync(pendingMarkerPath()),

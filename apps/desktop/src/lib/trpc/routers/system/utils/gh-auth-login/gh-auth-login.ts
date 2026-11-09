@@ -13,8 +13,11 @@ export interface GhProcess {
 
 export interface GhAuthLoginDeps {
 	hasUsableGit: () => Promise<boolean>;
+	toolEnv: () => Promise<Record<string, string>>;
+	/** A directory holding a `git` that exits 1, for gh to find before Apple's stub. */
+	gitShimDir: () => Promise<string>;
 	runGh: (args: string[]) => Promise<void>;
-	spawnGh: (args: string[]) => GhProcess;
+	spawnGh: (args: string[], env: Record<string, string>) => GhProcess;
 	isGitSetupPending: () => Promise<boolean>;
 	setGitSetupPending: (pending: boolean) => Promise<void>;
 }
@@ -23,14 +26,23 @@ const LOGIN_BASE_ARGS = ["auth", "login", "--hostname", "github.com", "--web"];
 const SETUP_GIT_ARGS = ["auth", "setup-git", "--hostname", "github.com"];
 
 /**
- * With `--git-protocol https`, gh runs git to set up its credential helper.
- * Without usable git, sign in as ssh (which runs no git) and switch gh back
- * to https right after.
+ * With `--git-protocol https`, gh also sets up git's credential helper after
+ * sign-in. Without usable git, sign in as ssh and switch gh back to https
+ * right after.
  */
 export function ghLoginArgs(gitUsable: boolean): string[] {
 	return gitUsable
 		? [...LOGIN_BASE_ARGS, "--git-protocol", "https", "--skip-ssh-key"]
 		: [...LOGIN_BASE_ARGS, "--git-protocol", "ssh", "--skip-ssh-key"];
+}
+
+export function withPathFirst(
+	env: Record<string, string>,
+	dir: string,
+): Record<string, string> {
+	const key =
+		Object.keys(env).find((name) => name.toUpperCase() === "PATH") ?? "PATH";
+	return { ...env, [key]: [dir, env[key]].filter(Boolean).join(":") };
 }
 
 export function runGhAuthLogin(
@@ -45,8 +57,14 @@ export function runGhAuthLogin(
 
 	void (async () => {
 		const gitUsable = await deps.hasUsableGit();
+		const env = await deps.toolEnv();
+		// gh asks git for its credential helper before it prints the code,
+		// whatever the protocol.
+		const loginEnv = gitUsable
+			? env
+			: withPathFirst(env, await deps.gitShimDir());
 		if (stopped) return;
-		child = deps.spawnGh(ghLoginArgs(gitUsable));
+		child = deps.spawnGh(ghLoginArgs(gitUsable), loginEnv);
 		let output = "";
 		let sentCode = false;
 		child.onOutput((chunk) => {
