@@ -9363,6 +9363,9 @@ msgstr "GitHub Appのインストールがキャンセルされました。"
 msgid "GitHub App installed successfully!"
 msgstr "GitHub Appをインストールしました!"
 
+msgid "GitHub CLI"
+msgstr "GitHub CLI"
+
 msgid "GitHub connected, but initial sync failed to start. Please try reconnecting."
 msgstr "GitHubは接続しましたが、初回同期を開始できませんでした。再接続をお試しください。"
 

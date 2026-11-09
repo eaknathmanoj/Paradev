@@ -36,7 +36,9 @@ export function GitHubCliRow() {
 	return (
 		<div className="flex items-center justify-between gap-8 py-2.5">
 			<div className="min-w-0 space-y-0.5">
-				<Label className="text-sm font-medium">GitHub CLI</Label>
+				<Label className="text-sm font-medium">
+					<Trans>GitHub CLI</Trans>
+				</Label>
 				<div className="text-xs text-muted-foreground">
 					{status.isPending ? (
 						<Skeleton className="h-3 w-40" />

@@ -9363,6 +9363,9 @@ msgstr "Việc cài đặt GitHub App đã bị hủy."
 msgid "GitHub App installed successfully!"
 msgstr "Đã cài GitHub App thành công!"
 
+msgid "GitHub CLI"
+msgstr "GitHub CLI"
+
 msgid "GitHub connected, but initial sync failed to start. Please try reconnecting."
 msgstr "Đã kết nối GitHub, nhưng lần đồng bộ đầu tiên không khởi động được. Vui lòng thử kết nối lại."
 
