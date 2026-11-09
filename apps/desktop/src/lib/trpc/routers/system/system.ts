@@ -3,7 +3,12 @@ import { observable } from "@trpc/server/observable";
 import { net } from "electron";
 import { publicProcedure, router } from "../..";
 import { execWithShellEnv } from "../workspaces/utils/shell-env";
-import { type GhAuthLoginEvent, runGhAuthLogin } from "./utils/gh-auth-login";
+import {
+	createGhCliDeps,
+	finishPendingGhGitSetup,
+	type GhAuthLoginEvent,
+	runGhAuthLogin,
+} from "./utils/gh-auth-login";
 import { type GhInstallEvent, installGhCli } from "./utils/install-gh-cli";
 
 interface GhDetectResult {
@@ -54,6 +59,7 @@ async function detectGhCli(): Promise<GhDetectResult> {
 		} catch {}
 	}
 
+	if (authenticated) void finishPendingGhGitSetup();
 	return { installed: true, authenticated, version, path: "gh" };
 }
 
@@ -118,7 +124,7 @@ export const createSystemRouter = () => {
 				runGhAuthLogin((event) => {
 					emit.next(event);
 					if (event.type !== "code") emit.complete();
-				}),
+				}, createGhCliDeps()),
 			);
 		}),
 	});

@@ -22338,8 +22338,8 @@ msgstr "30 日間は「設定 → プロジェクト」から復元できます�
 msgid "You can see how we work before you talk to us."
 msgstr "話をする前に、私たちの働き方を見ることができます。"
 
-msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings."
-msgstr "公開リポジトリは引き続きクローンできます。プライベートリポジトリとプルリクエストには GitHub の接続が必要です。あとで設定から接続できます。"
+msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings → Git & Worktrees."
+msgstr "公開リポジトリは引き続きクローンできます。プライベートリポジトリとプルリクエストには GitHub の接続が必要です。あとで「設定 → Gitとワークツリー」から接続できます。"
 
 msgid "You can view this page but not change it"
 msgstr "このページは閲覧できますが、変更はできません"

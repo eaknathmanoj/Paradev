@@ -1,8 +1,8 @@
 import { Trans } from "@lingui/react/macro";
 import { Button } from "@superset/ui/button";
+import { Label } from "@superset/ui/label";
 import { Skeleton } from "@superset/ui/skeleton";
 import { useState } from "react";
-import { LuTerminal } from "react-icons/lu";
 import { electronTrpc } from "renderer/lib/electron-trpc";
 import {
 	GitHubCliDialog,
@@ -34,13 +34,10 @@ export function GitHubCliRow() {
 	};
 
 	return (
-		<div className="flex items-center gap-4 px-4 py-4">
-			<div className="flex size-9 items-center justify-center rounded-md border border-border bg-background">
-				<LuTerminal className="size-4" />
-			</div>
-			<div className="min-w-0 flex-1">
-				<div className="text-sm font-medium">GitHub CLI</div>
-				<div className="mt-0.5 truncate text-xs text-muted-foreground">
+		<div className="flex items-center justify-between gap-8 py-2.5">
+			<div className="min-w-0 space-y-0.5">
+				<Label className="text-sm font-medium">GitHub CLI</Label>
+				<div className="text-xs text-muted-foreground">
 					{status.isPending ? (
 						<Skeleton className="h-3 w-40" />
 					) : ready ? (
@@ -60,6 +57,7 @@ export function GitHubCliRow() {
 			</div>
 			{!status.isPending && !ready && (
 				<Button
+					className="shrink-0"
 					onClick={installed ? () => setDialogStart("auth") : install}
 					size="sm"
 					variant="outline"

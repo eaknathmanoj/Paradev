@@ -22338,8 +22338,8 @@ msgstr "Je kunt het 30 dagen lang herstellen via Instellingen → Projecten. De 
 msgid "You can see how we work before you talk to us."
 msgstr "Je kunt zien hoe we werken voordat je met ons praat."
 
-msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings."
-msgstr "Je kunt nog steeds openbare repository's klonen. Voor privérepository's en pull requests moet GitHub verbonden zijn. Je kunt dit later doen in Instellingen."
+msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings → Git & Worktrees."
+msgstr "Je kunt nog steeds openbare repository's klonen. Voor privérepository's en pull requests moet GitHub verbonden zijn. Je kunt dit later doen via Instellingen → Git en worktrees."
 
 msgid "You can view this page but not change it"
 msgstr "Je kunt deze pagina bekijken, maar niet wijzigen"

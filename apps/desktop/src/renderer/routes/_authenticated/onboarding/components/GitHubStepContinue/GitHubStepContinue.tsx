@@ -44,7 +44,7 @@ export function GitHubStepContinue({
 							<Trans>
 								You can still clone public repos. Private repos and pull
 								requests need GitHub connected. You can connect it later in
-								Settings.
+								Settings → Git & Worktrees.
 							</Trans>
 						</AlertDialogDescription>
 					</AlertDialogHeader>

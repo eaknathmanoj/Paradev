@@ -22338,8 +22338,8 @@ msgstr "Anda dapat memulihkannya dari Pengaturan → Proyek selama 30 hari. Fold
 msgid "You can see how we work before you talk to us."
 msgstr "Anda bisa melihat cara kami bekerja sebelum berbicara dengan kami."
 
-msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings."
-msgstr "Anda tetap bisa mengklon repositori publik. Repositori pribadi dan pull request memerlukan GitHub yang terhubung. Anda bisa menghubungkannya nanti di Pengaturan."
+msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings → Git & Worktrees."
+msgstr "Anda tetap bisa mengklon repositori publik. Repositori pribadi dan pull request memerlukan GitHub yang terhubung. Anda bisa menghubungkannya nanti di Pengaturan → Git & Worktree."
 
 msgid "You can view this page but not change it"
 msgstr "Anda dapat melihat halaman ini tetapi tidak dapat mengubahnya"

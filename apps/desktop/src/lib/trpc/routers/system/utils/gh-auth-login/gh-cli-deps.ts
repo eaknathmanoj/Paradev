@@ -1,0 +1,90 @@
+import { execFile, spawn } from "node:child_process";
+import fs from "node:fs";
+import path from "node:path";
+import { promisify } from "node:util";
+import {
+	resolveAppHomeDir,
+	withBinDirOnPath,
+} from "@superset/agent-setup/paths";
+import { getProcessEnvWithShellEnv } from "../../../workspaces/utils/shell-env";
+import { hasUsableGit } from "../has-usable-git";
+import { finishPendingGitSetup, type GhAuthLoginDeps } from "./gh-auth-login";
+
+const execFileAsync = promisify(execFile);
+
+function pendingMarkerPath(): string {
+	return path.join(resolveAppHomeDir(), "gh-setup-git-pending");
+}
+
+async function toolEnv(): Promise<Record<string, string>> {
+	return withBinDirOnPath(await getProcessEnvWithShellEnv());
+}
+
+export function createGhCliDeps(): GhAuthLoginDeps {
+	return {
+		hasUsableGit: async () => {
+			const env = await toolEnv();
+			return hasUsableGit({
+				platform: process.platform,
+				run: async (command, args) =>
+					(await execFileAsync(command, args, { env, timeout: 5000 })).stdout,
+				fileExists: fs.existsSync,
+			});
+		},
+		runGh: async (args) => {
+			await execFileAsync("gh", args, {
+				env: await toolEnv(),
+				timeout: 15_000,
+			});
+		},
+		spawnGh: (args) => {
+			const ready = toolEnv().then((env) =>
+				spawn("gh", args, { env, stdio: ["ignore", "pipe", "pipe"] }),
+			);
+			const listeners: Array<(chunk: string) => void> = [];
+			let killed = false;
+			const exited = ready.then(
+				(child) =>
+					new Promise<number | null>((resolve) => {
+						if (killed) child.kill();
+						const forward = (data: Buffer) => {
+							for (const listener of listeners) listener(data.toString("utf8"));
+						};
+						child.stdout?.on("data", forward);
+						child.stderr?.on("data", forward);
+						child.on("error", () => resolve(null));
+						child.on("close", (code) => resolve(code));
+					}),
+			);
+			return {
+				onOutput: (listener) => listeners.push(listener),
+				exited,
+				kill: () => {
+					killed = true;
+					void ready.then((child) => child.kill());
+				},
+			};
+		},
+		isGitSetupPending: async () => fs.existsSync(pendingMarkerPath()),
+		setGitSetupPending: async (pending) => {
+			const marker = pendingMarkerPath();
+			if (pending) {
+				await fs.promises.mkdir(path.dirname(marker), { recursive: true });
+				await fs.promises.writeFile(marker, "");
+			} else {
+				await fs.promises.rm(marker, { force: true });
+			}
+		},
+	};
+}
+
+let inFlight: Promise<boolean> | null = null;
+
+export function finishPendingGhGitSetup(): Promise<boolean> {
+	inFlight ??= finishPendingGitSetup(createGhCliDeps())
+		.catch(() => false)
+		.finally(() => {
+			inFlight = null;
+		});
+	return inFlight;
+}

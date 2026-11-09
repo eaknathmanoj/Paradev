@@ -22338,8 +22338,8 @@ msgstr "30일 동안 설정 → 프로젝트에서 복원할 수 있습니다. �
 msgid "You can see how we work before you talk to us."
 msgstr "대화하기 전에 우리가 일하는 방식을 직접 볼 수 있습니다."
 
-msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings."
-msgstr "공개 저장소는 계속 클론할 수 있습니다. 비공개 저장소와 풀 리퀘스트에는 GitHub 연결이 필요합니다. 나중에 설정에서 연결할 수 있습니다."
+msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings → Git & Worktrees."
+msgstr "공개 저장소는 계속 클론할 수 있습니다. 비공개 저장소와 풀 리퀘스트에는 GitHub 연결이 필요합니다. 나중에 설정 → Git 및 worktree에서 연결할 수 있습니다."
 
 msgid "You can view this page but not change it"
 msgstr "이 페이지를 볼 수는 있지만 변경할 수는 없습니다"

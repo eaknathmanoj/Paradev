@@ -22332,8 +22332,8 @@ msgstr "Ви можете відновити його в «Налаштуван�
 msgid "You can see how we work before you talk to us."
 msgstr "Ви можете побачити, як ми працюємо, ще до розмови з нами."
 
-msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings."
-msgstr "Ви й надалі можете клонувати публічні репозиторії. Для приватних репозиторіїв і пул-реквестів потрібно підключити GitHub. Це можна зробити пізніше в Налаштуваннях."
+msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings → Git & Worktrees."
+msgstr "Ви й надалі можете клонувати публічні репозиторії. Для приватних репозиторіїв і пул-реквестів потрібно підключити GitHub. Це можна зробити пізніше в розділі Налаштування → Git і worktree."
 
 msgid "You can view this page but not change it"
 msgstr "Ви можете переглядати цю сторінку, але не можете її змінювати"

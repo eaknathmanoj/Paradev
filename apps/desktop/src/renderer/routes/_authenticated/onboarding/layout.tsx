@@ -151,7 +151,13 @@ function OnboardingFlowLayout() {
 							<Outlet />
 						</div>
 						<OnboardingNavigation
-							onBack={isFirstStep ? null : handleBack}
+							onBack={
+								!isFirstStep
+									? handleBack
+									: restarting
+										? () => navigate({ to: "/settings/experimental" })
+										: null
+							}
 							onContinue={handleContinue}
 							continueButton={
 								currentStep === SETUP_STEP && handleContinue ? (

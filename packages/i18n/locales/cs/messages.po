@@ -22338,8 +22338,8 @@ msgstr "Můžete ho obnovit v Nastavení → Projekty po dobu 30 dnů. Složka r
 msgid "You can see how we work before you talk to us."
 msgstr "Než s námi začnete mluvit, můžete vidět, jak pracujeme."
 
-msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings."
-msgstr "Veřejné repozitáře můžete klonovat i nadále. Soukromé repozitáře a pull requesty vyžadují připojený GitHub. Připojit ho můžete později v Nastavení."
+msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings → Git & Worktrees."
+msgstr "Veřejné repozitáře můžete klonovat i nadále. Soukromé repozitáře a pull requesty vyžadují připojený GitHub. Připojit ho můžete později v části Nastavení → Git a worktree."
 
 msgid "You can view this page but not change it"
 msgstr "Tuto stránku můžete zobrazit, ale ne změnit"

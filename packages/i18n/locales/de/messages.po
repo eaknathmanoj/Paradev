@@ -22338,8 +22338,8 @@ msgstr "Du kannst es 30 Tage lang unter Einstellungen → Projekte wiederherstel
 msgid "You can see how we work before you talk to us."
 msgstr "Du kannst sehen, wie wir arbeiten, bevor du mit uns sprichst."
 
-msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings."
-msgstr "Öffentliche Repositorys kannst du weiterhin klonen. Private Repositorys und Pull Requests brauchen eine Verbindung zu GitHub. Du kannst sie später in den Einstellungen herstellen."
+msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings → Git & Worktrees."
+msgstr "Öffentliche Repositorys kannst du weiterhin klonen. Private Repositorys und Pull Requests brauchen eine Verbindung zu GitHub. Du kannst sie später unter Einstellungen → Git & Worktrees herstellen."
 
 msgid "You can view this page but not change it"
 msgstr "Du kannst diese Seite ansehen, aber nicht ändern"

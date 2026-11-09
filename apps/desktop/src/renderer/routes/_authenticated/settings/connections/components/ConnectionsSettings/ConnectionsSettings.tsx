@@ -5,7 +5,6 @@ import { Skeleton } from "@superset/ui/skeleton";
 import { toast } from "@superset/ui/sonner";
 import { FaGithub } from "react-icons/fa";
 import { cloudTrpc } from "renderer/lib/cloud-trpc";
-import { GitHubCliRow } from "./components/GitHubCliRow";
 
 /** A person's own accounts, as opposed to the organization's integrations. */
 export function ConnectionsSettings() {
@@ -24,7 +23,6 @@ export function ConnectionsSettings() {
 				</p>
 			</div>
 			<div className="divide-y divide-border rounded-md border border-border">
-				<GitHubCliRow />
 				<GithubConnectionRow />
 			</div>
 		</div>

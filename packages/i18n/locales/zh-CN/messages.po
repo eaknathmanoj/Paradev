@@ -22338,8 +22338,8 @@ msgstr "你可以在 30 天内从“设置 → 项目”恢复它。仓库文件
 msgid "You can see how we work before you talk to us."
 msgstr "在与我们交流之前，你就能看到我们是如何工作的。"
 
-msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings."
-msgstr "你仍然可以克隆公开仓库。私有仓库和拉取请求需要连接 GitHub。你可以稍后在设置中连接。"
+msgid "You can still clone public repos. Private repos and pull requests need GitHub connected. You can connect it later in Settings → Git & Worktrees."
+msgstr "你仍然可以克隆公开仓库。私有仓库和拉取请求需要连接 GitHub。你可以稍后在“设置 → Git与worktree”中连接。"
 
 msgid "You can view this page but not change it"
 msgstr "你可以查看此页面，但不能更改"
